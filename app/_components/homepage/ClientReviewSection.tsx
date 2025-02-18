@@ -10,8 +10,8 @@ import {
 } from "@/components/ui/carousel";
 import ViewMoreButton from "@/components/ui/ViewMoreButton";
 import Image from "next/image";
-import RspCarosuel from "./Carosuel";
-import EmblaCarousel from "./Carosuel";
+// import RspCarosuel from "./Carosuel";
+// import EmblaCarousel from "./Carosuel";
 import { EmblaOptionsType } from 'embla-carousel'
 interface Story {
   tag: string;
@@ -52,9 +52,9 @@ const stories: Story[] = [
     image: "/assets/carosuel4.png",
   },
 ];
-const OPTIONS: EmblaOptionsType = {}
+// const OPTIONS: EmblaOptionsType = {}
 const SLIDE_COUNT = 8
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
+// const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 export default function ClientStories() {
   return (
