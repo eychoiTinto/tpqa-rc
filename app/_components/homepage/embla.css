@@ -1,0 +1,62 @@
+.embla {
+  max-width: 100%;
+  margin: auto;
+  /* Define slide heights and spacing */
+  --slide-height: 408px;
+  --slide-spacing: 1rem;
+  /* Define widths: small for sides, large for center */
+  --slide-size-small: 25%;
+  --slide-size-large: 27%;
+}
+
+.embla__viewport {
+  overflow: hidden;
+}
+
+/* The container's width is the sum of the 4 slides' widths:
+   2 small + 2 large = 25% + 35% + 35% + 25% = 120% */
+.embla__container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  margin-left: calc(var(--slide-spacing) * -1);
+  /* Total width = 2 * small + 2 * large = 2*25vw + 2*35vw = 120vw */
+  width: calc((2 * var(--slide-size-small)) + (2 * var(--slide-size-large)));
+  /* Shift left by half of a small slide's width (25vw/2 = 12.5vw) */
+  transform: translateX(-12.5vw);
+  transition: transform 0.3s ease-in-out;
+}
+
+.embla__slide {
+  transform: translate3d(0, 0, 0);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+}
+
+
+/* Card 1 and 4: use small size and reduced opacity */
+.embla__slide:nth-child(1),
+.embla__slide:nth-child(4) {
+  flex: 0 0 var(--slide-size-small);
+  opacity: 0.5;
+}
+
+/* Card 2 and 3: use large size */
+.embla__slide:nth-child(2),
+.embla__slide:nth-child(3) {
+  flex: 0 0 var(--slide-size-large);
+}
+
+/* Make sure your inner container (that shows the image) fills the slide */
+.embla__slide__number {
+  box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+  border-radius: 1.8rem;
+  font-size: 4rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--slide-height);
+  user-select: none;
+  /* Ensure overflow is hidden so that any extra image is cropped */
+  overflow: hidden;
+}

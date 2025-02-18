@@ -10,7 +10,9 @@ import {
 } from "@/components/ui/carousel";
 import ViewMoreButton from "@/components/ui/ViewMoreButton";
 import Image from "next/image";
-
+import RspCarosuel from "./Carosuel";
+import EmblaCarousel from "./Carosuel";
+import { EmblaOptionsType } from 'embla-carousel'
 interface Story {
   tag: string;
   title: string;
@@ -50,6 +52,9 @@ const stories: Story[] = [
     image: "/assets/carosuel4.png",
   },
 ];
+const OPTIONS: EmblaOptionsType = {}
+const SLIDE_COUNT = 8
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 export default function ClientStories() {
   return (
@@ -71,13 +76,14 @@ export default function ClientStories() {
 
           {/* Right fade overlay */}
           <div className="absolute right-0 top-0 w-[15%] h-full opacity-50 bg-gradient-to-l from-gray-50 to-transparent z-10" />
-
+          
           <Carousel
             opts={{
               align: "center",
               loop: true,
               skipSnaps: false,
-              startIndex: 0, // মোবাইলে প্রথম আইটেম থেকেই শুরু হবে
+              startIndex: 0,
+              
             }}
             className="w-full"
           >
@@ -114,6 +120,7 @@ export default function ClientStories() {
             <CarouselNext className="hidden md:absolute right-[8%] z-20" />
           </Carousel>
         </div>
+        {/* <EmblaCarousel slides={SLIDES} options={OPTIONS} /> */}
 
         <ViewMoreButton title={"Find Out More"} />
       </div>

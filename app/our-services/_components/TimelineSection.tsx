@@ -4,7 +4,7 @@ import React from 'react'
 const TimelineSection = () => {
     return (
         <div className='bg-primary py-[120px] md:py-40 px-5 md:px-0'>
-            <h1 className='header-text text-center !text-muted-foreground'>체계적인 프로세스로<br />
+            <h1 className='header-text text-center !text-muted-foreground leading-[32px] md:leading-[64px]'>체계적인 프로세스로<br />
                 더 확실한 평판조회</h1>
 
             <div className='container flex w-full justify-center mt-16'>
