@@ -12,7 +12,7 @@ import ViewMoreButton from "@/components/ui/ViewMoreButton";
 import Image from "next/image";
 // import RspCarosuel from "./Carosuel";
 // import EmblaCarousel from "./Carosuel";
-import { EmblaOptionsType } from 'embla-carousel'
+// import { EmblaOptionsType } from 'embla-carousel'
 interface Story {
   tag: string;
   title: string;
@@ -53,7 +53,7 @@ const stories: Story[] = [
   },
 ];
 // const OPTIONS: EmblaOptionsType = {}
-const SLIDE_COUNT = 8
+// const SLIDE_COUNT = 8
 // const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 export default function ClientStories() {
