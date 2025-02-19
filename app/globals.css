@@ -173,7 +173,7 @@ body {
 
 @layer components {
   .title-paragraph {
-      @apply text-lg md:text-2xl font-bold text-primary tracking-[-0.36px] md:tracking-[-0.48px] leading-[27px] md:leading-[36px];
+      @apply text-lg md:text-2xl font-bold text-primary tracking-[-0.36px] md:tracking-[-0.48px] leading-[27px] md:leading-[38px];
   }
 }
 

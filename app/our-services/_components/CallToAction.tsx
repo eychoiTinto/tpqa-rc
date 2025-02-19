@@ -7,30 +7,31 @@ const CallToAction = () => {
         <div className='bg-primary pb-[120px] md:pb-44 space-y-[60px]'>
             <h1 className='header-text !text-muted-foreground text-center leading-[32px] md:leading-[64px]'>중요한 선택의 순간,<br />
                 체계적인 평판조회를 경험해보세요.</h1>
-            <div className='hidden container md:grid grid-cols-1 gap-6 px-5 md:px-0'>
+            <div className='container md:grid grid-cols-1 gap-6 px-5 md:px-0'>
                 {callToActionData?.map((section) => (
                     <div key={section.id} className="relative overflow-hidden rounded-lg">
-                        <div className="relative min-h-96 w-full border border-white-border overflow-hidden rounded-2xl">
+                        <div className="relative min-h-[320px] md:min-h-[300px] w-full border border-white-border overflow-hidden rounded-2xl">
                             <Image src={section.image || "/placeholder.svg"} alt="" fill className="object-cover" priority />
                             <div
                                 className="absolute inset-0"
                                 style={{
                                     background: "linear-gradient(90deg, rgba(10, 40, 68, 0.90) 15%, rgba(10, 40, 68, 0.00) 100%)",
-                                }}                             />
-                            <div className="absolute inset-0 flex flex-col justify-center p-8 text-white">
-                                <div className="md:max-w-2xl space-y-2 md:p-[58px]">
+                                }}
+                            />
+                            <div className="absolute inset-0 flex flex-col justify-center text-white">
+                                <div className="md:max-w-3xl md:py-[58px] md:pl-[80px] px-[16px]">
                                     <h2 className="title-paragraph !text-white">{section.title}</h2>
                                     {section.subtitle && (
                                         <h3 className="title-paragraph !text-white">{section.subtitle}</h3>
                                     )}
-                                    <p className="text-sm text-gray-200 md:text-xl tracking-[-0.28px] md:tracking-[-0.4px] ">{section.description}</p>
+                                    <p className="text-sm text-gray-200 md:text-xl md:leading-8 tracking-[-0.28px] md:tracking-[-0.4px] break-keep mt-[12px]">{section.description}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 ))}
             </div>
-            <div className='container px-5 md:px-0'>
+            <div className='hidden container px-5 md:px-0'>
                 {callToActionDataMobile?.map((section) => (
                     <div key={section.id} className="mb-3 relative overflow-hidden rounded-lg">
                         <div className="relative min-h-[320px] w-full border border-white-border overflow-hidden rounded-2xl">
