@@ -24,11 +24,9 @@ const Navbar = () => {
     ]
 
     const [isScrolled, setIsScrolled] = useState(false);
-    const [isClient, setIsClient] = useState(false);
 
     // 스크롤 이벤트 핸들러
     useEffect(() => {
-        setIsClient(true); // 클라이언트에서 실행됨을 표시
 
         const handleScroll = () => {
             if (window.scrollY > 50) {
