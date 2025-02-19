@@ -39,14 +39,14 @@ export default function CertificationTable() {
                                     </td>
                                     <td rowSpan={3} className="border py-[10px] px-4">
                                         <ul className="table-row space-y-1">
-                                            <li>3인 (Open Referee 3)</li>
                                             <li>3인 (Open 2 + Blind 1)</li>
+                                            <li>4인 (Open 2 + Blind 2)</li>
                                         </ul>
                                     </td>
                                     <td rowSpan={3} className="border py-[10px] px-4">
                                         <ul className="table-row space-y-1">
-                                            <li>3인 (Open Referee 3)</li>
-                                            <li>3인 (Open 2 + Blind 1)</li>
+                                            <li>4인 (Open 2 + Blind 2)</li>
+                                            <li>5인 (Open 3 + Blind 2)</li>
                                         </ul>
                                     </td>
                                 </tr>
@@ -60,7 +60,7 @@ export default function CertificationTable() {
                                 </tr>
                                 <tr>
                                     <td className="table-text p-3">비고</td>
-                                    <td className="border py-[10px] px-4">인싸 + 업무 성향 중심</td>
+                                    <td className="border py-[10px] px-4">인성 + 업무 성향 중심</td>
                                     <td className="border py-[10px] px-4">실무자급 추천</td>
                                     <td className="border py-[10px] px-4">관리자급 추천</td>
                                 </tr>
