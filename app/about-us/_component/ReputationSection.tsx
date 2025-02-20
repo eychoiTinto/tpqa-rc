@@ -25,7 +25,7 @@ const ReputationSection = () => {
                         </div>
                     </div>
                     <div className="flex-1 w-full">
-                        <img src="/assets/pie-chart.png" className="w-full" alt="pie chart" />
+                        <img src="/assets/pie-chart-02.png" alt="pie chart" />
                     </div>
                 </div>
                 <div className="flex flex-col md:flex-row gap-6 justify-between items-center container mx-auto w-full">
