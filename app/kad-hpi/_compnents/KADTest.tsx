@@ -1,9 +1,7 @@
 'use client'
-import React, { useState } from 'react'
+import React from 'react'
 
 const KADTest = () => {
-    const [isExpanded, setIsExpanded] = useState(false)
-
     return (
         <div className='px-5 md:px-0'>
             <div className='container space-y-4 md:space-y-3 mt-[60px] md:mt-[100px]'>
