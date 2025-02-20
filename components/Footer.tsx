@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-
+import Link from "next/link";
 import { Button } from './ui/button'
 
 const Footer = () => {
@@ -51,9 +51,11 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <Button className='mt-10 border rounded-full text-sm md:text-xl py-[10px] md:py-7 px-5 md:px-6 border-white-border'>
-                    개인정보처리방침
-                </Button>
+                <Link href="/policy">
+                    <Button className='mt-10 border rounded-full text-sm md:text-xl py-[10px] md:py-7 px-5 md:px-6 border-white-border'>
+                        개인정보처리방침
+                    </Button>
+                </Link>
             </div>
             {/* footer 2 */}
             <div className="bg-[rgba(255,255,255,0.02)] py-6 border-t border-white-border">
