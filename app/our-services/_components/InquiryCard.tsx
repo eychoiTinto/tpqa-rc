@@ -8,7 +8,7 @@ const InquiryCard = ({ description, details, hashtags, title }: InquiryDataTypes
                 <CardHeader className='p-0 flex flex-col justify-between space-y-4 md:space-y-6'>
                     <h2 className='content-paragraph font-semibold'>{title}</h2>
                     <div className='hero-subtitle !text-primary !font-semibold !text-left'>{description}</div>
-                    <hr className='border border-[#C4C4CC]'/>
+                    <hr className='border-px border-[#C4C4CC]'/>
                     <div className='content-paragraph '>{details}</div>
                     <div className='content-paragraph !text-[#1C4A90]'>{hashtags}</div>
                 </CardHeader>

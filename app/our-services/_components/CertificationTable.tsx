@@ -1,13 +1,14 @@
 export default function CertificationTable() {
     return (
         <div className="container py-20 md:py-44 px-5 md:px-0">
-            <div className="space-y-4">
-                <h2 className="header-text">검사 내용</h2>
-
-                <ul className="text-lg md:text-xl text-[#636365] list-disc list-inside pb-6 md:pb-10">
-                    <li>평판조회 항목, 양식 선택 가능</li>
-                    <li>고객사의 요청 및 해산에 따라 Customizing 가능</li>
-                </ul>
+            <div >
+                <div className="space-y-1 md:space-y-3">
+                    <h2 className="header-text">검사 내용</h2>
+                    <ul className="text-sm md:text-xl text-[#636365] list-disc list-inside pb-6 md:pb-10">
+                        <li>평판조회 항목, 양식 선택 가능</li>
+                        <li>고객사의 요청 및 해산에 따라 Customizing 가능</li>
+                    </ul>
+                </div>
 
                 {/* Table Wrapper with Scroll */}
                 <div className="rounded-2xl overflow-hidden">

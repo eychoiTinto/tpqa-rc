@@ -16,7 +16,7 @@ const ReferenceCheckKeyItems = () => {
                                     업무에서 보여준 역량을 확인합니다.</h1>
                             </div>
                             <div className='card-no-border basis-2/3 w-full'>
-                                <h1 className='card-title !text-sm'>성과/역량의 진위</h1>
+                                <h1 className='card-title'>성과/역량의 진위</h1>
                                 <p className='card-description leading-[64px]'>짧은 면접 시간과 서류만으로는 지원자의 숨겨진 성과와 역량을 완전히 파악하기 어렵습니다.<br />
                                     보이지 않고 들리지 않는 이러한 부분을 확인하기 위해, 실무 면접 전후에 평판조회를 진행하는 것을<br />
                                     권장합니다. (주)넥서스앤컴퍼니는 후보자와 함께 일한 동료를 통해 지원자의 실제 성과와 업무에서<br />

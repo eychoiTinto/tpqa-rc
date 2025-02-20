@@ -16,9 +16,15 @@ export default function ClientStories() {
           </h2>
           <p className="text-[#202021]">신뢰를 바탕으로 함께 만들어가는 성공 사례들</p>
         </div>
+        <div className="hidden md:block">
           <CarouselV2 />
+        </div>
         <ViewMoreButton title={"Find Out More"} />
       </div>
     </section>
   );
 }
+
+const OPTIONS = { loop: true }
+const SLIDE_COUNT = 5
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys())

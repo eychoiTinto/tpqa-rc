@@ -1,3 +1,4 @@
+'use client'
 import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -13,14 +14,14 @@ interface ButtonGroupProps {
     carouselState?: { currentSlide: number };
 }
 
-const ButtonGroup: React.FC<ButtonGroupProps> = ({ next, setPrev }) => {
+const ButtonGroup: React.FC<ButtonGroupProps> = ({ next, previous, setPrev }) => {
     return (
         <div className='carousel-button-group mb-4 gap-4 flex justify-between items-center w-full absolute container left-1/2 -translate-x-1/2'>
             <svg
                 className='hover:cursor-pointer'
                 onClick={() => {
                     setPrev(false);
-                    next();
+                    previous();
                 }}
                 xmlns="http://www.w3.org/2000/svg"
                 width={60}
@@ -70,7 +71,7 @@ const CarouselV2: React.FC = () => {
                 arrows={false}
                 autoPlaySpeed={3000}
                 centerMode
-                className="w-full"
+                className="w-full overflow-hidden"
                 draggable
                 infinite
                 keyBoardControl
@@ -91,7 +92,7 @@ const CarouselV2: React.FC = () => {
                     const secondNextIndex = nextIndex === 8 ? 4 : nextIndex + 1;
 
                     return (
-                        <div key={story.id} className="pl-2 first:pl-6 w-full">
+                        <div key={story.id} className="pl-2 basis-full sm:basis-1/2 md:basis-1/3 first:pl-6 w-full">
                             <div
                                 className={`relative h-[408px] overflow-hidden rounded-[16px] w-full transition-opacity duration-300 
                                 ${nextIndex === story.id || secondNextIndex === story.id ? 'opacity-100' : 'opacity-50'}`}

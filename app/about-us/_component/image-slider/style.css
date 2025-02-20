@@ -19,6 +19,29 @@
   overflow: hidden;
 }
 
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.flipped {
+  transform: scaleX(-1); /* Horizontal flip */
+}
+
+.content {
+  position: relative; /* Ensures content stays above background */
+  /* Add other existing content styles here */
+}
+
+/* Keep your existing styles for transitions and other properties */
+
 .panel::before {
   content: "";
   position: absolute;

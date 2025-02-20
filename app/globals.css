@@ -118,12 +118,12 @@ html {
 }
 
 .hero-divider {
-  @apply border-[rgba(255,255,255,0.2)] mb-3;
+  @apply border-b border-[rgba(255,255,255,0.2)] mb-3;
 }
 
 
 .header-text  {
-  @apply text-xl md:text-3xl lg:text-[40px] font-semibold;
+  @apply text-xl md:text-3xl lg:text-[40px] font-semibold leading-[32px] md:leading-[64px];
 }
 
 .footer-subtext {
@@ -131,7 +131,7 @@ html {
 }
 
 .border-vertical {
-  @apply hidden md:block h-4 border-l-[1px]
+  @apply hidden md:block h-4 border-l-2
 }
 .input-box {
   @apply border-white-border text-white py-6 md:py-7 rounded-xl md:rounded-2xl bg-[#ffffff0a]
@@ -150,7 +150,7 @@ html {
   @apply bg-[#F4F5F7] rounded-2xl p-4 md:p-8 space-y-2 text-primary
 }
 .card-title {
-  @apply font-semibold md:font-bold text-primary text-lg md:text-2xl w-full tracking-[0.32px] md:tracking-[-0.48px];
+  @apply font-semibold md:font-bold text-primary text-lg md:text-2xl w-full tracking-[0.32px] md:tracking-[-0.48px] leading-[22.4px] md:leading-[32px];
 }
 .card-description {
   @apply text-sm md:text-xl text-primary tracking-[-0.28px] md:tracking-[-0.4px];
@@ -174,7 +174,7 @@ html {
     @apply text-sm md:text-xl text-primary tracking-[-0.28px] md:tracking-[-0.4px] leading-6 md:leading-[32px] w-full;
   }
   .content-subheading {
-    @apply text-white/70 text-xs md:text-base font-normal pb-[4px];
+    @apply text-white/70 text-xs md:text-base font-normal;
   }
 }
 

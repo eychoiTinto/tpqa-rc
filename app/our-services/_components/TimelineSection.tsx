@@ -10,18 +10,18 @@ const TimelineSection = () => {
             <div className='container flex w-full justify-center mt-16'>
                 <div className="relative">
                     {/* Timeline line */}
-                    <div className="absolute left-[103px] md:left-[140px] top-[24px] w-[2px] h-[calc(100%-125px)] bg-[#6C7E8F]" />
+                    <div className="absolute left-[103px] md:left-[220px] top-6 w-[2px] h-[calc(100%-125px)] bg-[#6C7E8F]" />
 
                     {/* Timeline items */}
-                    <div className="space-y-12">
+                    <div className="space-y-16">
                         {timelineData.map((step, index) => (
-                            <div key={index} className="flex gap-8 relative">
+                            <div key={index} className="flex gap-7 relative">
                                 {/* Title */}
-                                <div className="min-w-[78px] md:w-[120px] text-right font-medium text-white text-sm md:text-2xl">{step.title}</div>
+                                <div className="min-w-[78px] md:w-[165px] text-right font-medium text-white text-sm md:text-2xl mr-7">{step.title}</div>
 
                                 {/* Dot */}
 
-                                <div className='relative -left-5 md:-left-[25px] z-10'>
+                                <div className='relative -left-5 md:-left-[15px] z-10'>
                                     {
                                         step?.isDot ? <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
                                             <rect width="28" height="28" rx="14" fill="#6C7E8F" />
@@ -36,7 +36,7 @@ const TimelineSection = () => {
                                 {/* Content */}
                                 <div className='space-y-4'>
                                     <div className="flex-1 text-muted-foreground text-sm md:text-xl leading-7 whitespace-pre-line">{step.subtitle}</div>
-                                    <div className="flex-1 text-[#8BA1B7] text-xs md:text-base leading-7 whitespace-pre-line">{step.content}</div>
+                                    <div className="flex-1 text-[#8BA1B7] text-xs md:text-base md:leading-[25.6px] whitespace-pre-line">{step.content}</div>
                                 </div>
                             </div>
                         ))}
