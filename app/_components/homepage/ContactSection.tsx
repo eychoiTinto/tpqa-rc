@@ -135,13 +135,13 @@ export default function ContactForm() {
                                     </div>
                                 </div>
                                 <div className="flex flex-col md:flex-row gap-10 items-center justify-beween w-full">
-                                    <div className="space-y-1 w-full">
-                                        <div className="flex items-center space-x-2">
+                                    <div className="space-y-2 md:space-y-1 w-full">
+                                        <div className="flex items-center justify-center md:justify-start space-x-2">
                                             <Label htmlFor="terms" className="text-sm md:text-base text-gray-400 font-normal tracking-[-0.28px] md:tracking-[-0.32px]">
                                                 위 개인정보 수집 및 이용 동의 샤항을 읽고 동의하십니까?
                                             </Label>
                                         </div>
-                                        <div className="flex items-center space-x-4">
+                                        <div className="flex items-center space-x-4 justify-center md:justify-start">
                                             <Checkbox id="agree" required />
                                             <Label htmlFor="agree" className="text-muted-foreground font-semibold text-base md:text-xl">
                                                 예 동의합니다.

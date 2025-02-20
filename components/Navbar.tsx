@@ -67,7 +67,7 @@ const Navbar = () => {
                 {/* Desktop Navigation */}
                 <div
                     className={`
-                        text-base hidden md:flex items-center gap-10
+                        text-base hidden lg:flex items-center gap-10
                         ${isScrolled || !isHomePage ? "text-primary" : "text-white"}
                     `}
                 >
@@ -85,14 +85,14 @@ const Navbar = () => {
 
                 {/* Mobile Navigation */}
                 <Sheet>
-                    <SheetTrigger asChild className="md:hidden">
-                        <Button variant="ghost" size="icon" className={isScrolled || !isHomePage ? "text-primary p-0" : "p-0 text-white"}>
+                    <SheetTrigger asChild className="lg:hidden">
+                        <Button variant="ghost" size="icon" className={`mo-menu ${isScrolled || !isHomePage ? "text-primary p-0" : "p-0 text-white"}`}>
                             <Menu className="h-6 w-6" />
                         </Button>
                     </SheetTrigger>
                     <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                         <SheetTitle></SheetTitle>
-                        <div className="flex flex-col gap-4">
+                        <div className="flex flex-col gap-4 mt-5">
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.href}

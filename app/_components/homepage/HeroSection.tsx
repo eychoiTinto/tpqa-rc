@@ -6,8 +6,7 @@ export default function Hero() {
         <div className="h-full md:h-[1241px] flex items-center justify-center overflow-hidden bg-primary top-0 p-5 md:p-0">
             {/* Background Image */}
             <div
-                className="absolute inset-0 z-0"
-                style={{ backgroundImage: `url('assets/hero.png')` }}
+                className="absolute inset-0 z-0 hero-bg"
             />
             <div
                 className="h-screen md:h-[300px] w-full absolute -bottom-14"
@@ -32,7 +31,7 @@ export default function Hero() {
                     <a href="#contact" className="flex justify-center md:justify-start">
                         <Button
                             variant="secondary"
-                            className="bg-white text-[#1C4A90] hover:bg-muted-foreground rounded-full px-5 md:px-8 py-[10px] md:py-6 text-xl"
+                            className="bg-white text-[#1C4A90] hover:bg-muted-foreground rounded-full px-5 md:px-8 py-[10px] md:py-6 md:text-xl"
                         >
                             평판조회 샘플요청
                         </Button>

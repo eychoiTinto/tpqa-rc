@@ -85,9 +85,26 @@ body {
 html {
   scroll-behavior: smooth;
 }
+button {
+  outline: none;
+}
 
+.container {
+  width: 87.5vw;
+  max-width: 1440px;
+}
 /* hero section  */
 /* globals.css */
+.hero-bg {
+  background-image: url('/assets/hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .hero-bg {
+    background-image: url("/assets/hero-m.png");
+  }
+}
 .hero-title {
   @apply text-muted-foreground text-center md:text-left font-pretendard text-[32px] md:text-[64px] font-semibold leading-[41px] md:leading-[76.8px] tracking-[-0.64px] md:tracking-[-1.28px] mb-5 md:mb-8;
 }
@@ -202,4 +219,12 @@ html {
 
 .custom-list-disc {
   @apply list-disc list-inside pl-4 ml-4 mt-[6px];
+}
+
+.mo-menu svg {
+  width: 24px !important;
+  height: 24px !important;
+}
+.mo-menu.hover\:bg-accent:hover {
+  background-color: transparent !important;
 }
