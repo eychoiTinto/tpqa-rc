@@ -10,10 +10,10 @@ export default function CertificationTable() {
                 </ul>
 
                 {/* Table Wrapper with Scroll */}
-                <div className="rounded-2xl overflow-hidden border-[0.5px] border-gray-300">
+                <div className="rounded-2xl overflow-hidden">
                     <div className="overflow-x-auto">
-                        <table className="w-full border-none text-lg min-w-[800px]">
-                            <thead className="border-[0.5px] bg-gray-50">
+                        <table className="w-full text-lg min-w-[800px]">
+                            <thead className="bg-gray-50">
                                 <tr>
                                     <th className="table-text text-primary font-semibold p-3 min-w-[120px]">레벨/유형</th>
                                     <th className="table-text text-primary font-semibold p-3 min-w-[260px]">
@@ -31,19 +31,19 @@ export default function CertificationTable() {
                                 <tr>
                                     <td className="table-text p-3 hidden md:block">Associate Level</td>
                                     <td className="table-text p-3 block md:hidden">레벨/유형</td>
-                                    <td rowSpan={3} className="border py-[10px] px-4">
+                                    <td rowSpan={3} className="py-[10px] px-4">
                                         <ul className="table-row space-y-1">
                                             <li>3인 (Open Referee 3)</li>
                                             <li>3인 (Open 2 + Blind 1)</li>
                                         </ul>
                                     </td>
-                                    <td rowSpan={3} className="border py-[10px] px-4">
+                                    <td rowSpan={3} className="py-[10px] px-4">
                                         <ul className="table-row space-y-1">
                                             <li>3인 (Open 2 + Blind 1)</li>
                                             <li>4인 (Open 2 + Blind 2)</li>
                                         </ul>
                                     </td>
-                                    <td rowSpan={3} className="border py-[10px] px-4">
+                                    <td rowSpan={3} className="py-[10px] px-4">
                                         <ul className="table-row space-y-1">
                                             <li>4인 (Open 2 + Blind 2)</li>
                                             <li>5인 (Open 3 + Blind 2)</li>
@@ -60,9 +60,9 @@ export default function CertificationTable() {
                                 </tr>
                                 <tr>
                                     <td className="table-text p-3">비고</td>
-                                    <td className="border py-[10px] px-4">인성 + 업무 성향 중심</td>
-                                    <td className="border py-[10px] px-4">실무자급 추천</td>
-                                    <td className="border py-[10px] px-4">관리자급 추천</td>
+                                    <td className="py-[10px] px-4">인성 + 업무 성향 중심</td>
+                                    <td className="py-[10px] px-4">실무자급 추천</td>
+                                    <td className="py-[10px] px-4">관리자급 추천</td>
                                 </tr>
                             </tbody>
                         </table>

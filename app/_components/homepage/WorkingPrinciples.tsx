@@ -60,7 +60,7 @@ const caseStudies: CaseStudy[] = [
 ]
 const WorkingPrinciples = () => {
     return (
-        <div className='bg-white py-[120px] md:py-[160px] container mx-auto px-5 md:px-0'>
+        <div id="need" className='bg-white py-[120px] md:py-[160px] container mx-auto px-5 md:px-0'>
             <HeroTitlePosition>
                 <h3 className='title-important text-center'>평판조회의 필요성</h3>
                 <h2 className='header-text text-primary leading-[32px] md:leading-[64px]'>평판조회는 채용 리스크를 줄이고<br />조직의 손실을 방지하는 데 필수적입니다.</h2>

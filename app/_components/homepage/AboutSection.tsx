@@ -15,9 +15,9 @@ const HighlightText = ({ children }: { children: React.ReactNode }) => (
 
 export default function AboutSection() {
     return (
-        <div className="bg-primary text-white relative overflow-hidden">
+        <div id="what" className="bg-primary text-white relative overflow-hidden">
             <div className="pt-[120px] md:py-[200px] space-y-[108px] md:space-y-60 px-5 md:px-0">
-                <div className="grid md:grid-cols-2 justify-between items-start container mx-auto">
+                <div className="grid md:grid-cols-2 justify-between items-center container mx-auto">
                     {/* Left Content */}
                     <div className="space-y-6 ">
                         <SectionTitle>평판조회란?</SectionTitle>
@@ -36,7 +36,7 @@ export default function AboutSection() {
                     </div>
 
                     {/* Right Content - Chat Bubbles */}
-                    <div className="flex flex-col gap-6 md:gap-[72px] md:relative bottom-24 mt-[70px] md:mt-0">
+                    <div className="flex flex-col gap-6 md:gap-[72px] bottom-24 mt-[70px] md:mt-0">
                         <ChatBubble position='left' message="단순 면접만으로는 지원자의 진짜 성격과 협업 태도를 알기 어려워요" />
                         <ChatBubble position='right' message="서류만 보면 완벽해 보이는데, 실제로 어떤 사람인지 확신이 안 들어요." />
                         <ChatBubble position='left' message="채용 후 문제가 생길까 걱정돼서 미리 더 확실히 검증하고 싶어요." />

@@ -91,9 +91,9 @@ const CarouselV2: React.FC = () => {
                     const secondNextIndex = nextIndex === 8 ? 4 : nextIndex + 1;
 
                     return (
-                        <div key={story.id} className="pl-2 basis-full sm:basis-1/2 md:basis-1/3 first:pl-6 w-full">
+                        <div key={story.id} className="pl-2 first:pl-6 w-full">
                             <div
-                                className={`relative h-[408px] overflow-hidden rounded-lg w-full transition-opacity duration-300 
+                                className={`relative h-[408px] overflow-hidden rounded-[16px] w-full transition-opacity duration-300 
                                 ${nextIndex === story.id || secondNextIndex === story.id ? 'opacity-100' : 'opacity-50'}`}
                             >
                                 <Image
@@ -108,9 +108,9 @@ const CarouselV2: React.FC = () => {
                                         {story.tag}
                                     </Badge>
                                 </div>
-                                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                                    <h3 className="text-xl font-normal">{story.title}</h3>
-                                    <p className="text-[28px] font-semibold tracking-[-0.56px] text-gray-200">
+                                <div className="absolute bottom-0 left-0 right-0 p-8 text-white text-[28px] font-semibold ">
+                                    <p>{story.title}</p>
+                                    <p className="tracking-[-0.56px] text-gray-200">
                                         {story.subtitle}
                                     </p>
                                 </div>
@@ -135,11 +135,11 @@ interface Story {
 }
 
 const stories: Story[] = [
-    { id: 4, tag: "대기업", title: "평판조회 의뢰후기", subtitle: "국내 대기업 H사 인사팀 과장", image: "/assets/carosuel2.png" },
-    { id: 5, tag: "스타트업", title: "평판조회 담당사례", subtitle: "IT스타트업 L사 대표", image: "/assets/carosuel4.png" },
-    { id: 6, tag: "중소기업", title: "평판조회 사례", subtitle: "제조업체 K사 이사", image: "/assets/carosuel3.png" },
-    { id: 7, tag: "대기업", title: "평판조회 후기", subtitle: "국내 대기업 S사 부장", image: "/assets/about-carosuel5.png" },
-    { id: 8, tag: "스타트업", title: "평판조회 사례", subtitle: "IT스타트업 B사 대표", image: "/assets/carosuel1.png" }
+    { id: 4, tag: "검증사레", title: "국내 유통 대기업", subtitle: "인사운영팀 과장", image: "/assets/carosuel2.png" },
+    { id: 5, tag: "의뢰후기", title: "국내 반도체 대기업", subtitle: "인사팀 수석", image: "/assets/carosuel4.png" },
+    { id: 6, tag: "검증사례", title: "바이오벤처 J사", subtitle: "인사팀 팀장", image: "/assets/carosuel3.png" },
+    { id: 7, tag: "검증사례", title: "국내 금융사", subtitle: "인사팀 차장", image: "/assets/about-carosuel5.png" },
+    { id: 8, tag: "의뢰후기", title: "IT스타트업 L사", subtitle: "대표", image: "/assets/carosuel1.png" }
 ];
 
 

@@ -12,9 +12,14 @@ interface CardProps {
 export default function InteractiveCard({ title, id, description, backgroundImage }: CardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
+  const toggleExpand = () => {
+    setIsExpanded((prev) => !prev);
+  };
+
   return (
     <div
-      className={`relative w-full ${isExpanded ? 'h-[500px]' : 'h-[200px]'} md:h-[408px] rounded-2xl overflow-hidden shadow-lg transition-all duration-300 ease-in-out ${isExpanded ? "backdrop-blur-md" : ""
+      onClick={toggleExpand}
+      className={`relative w-full ${isExpanded ? 'h-[500px]' : 'h-[200px]'} md:h-[408px] rounded-2xl overflow-hidden shadow-lg transition-all duration-300 ease-in-out cursor-pointer ${isExpanded ? "backdrop-blur-md" : ""
         }`}
       style={{
         backgroundImage: `url(${backgroundImage})`,
@@ -27,10 +32,9 @@ export default function InteractiveCard({ title, id, description, backgroundImag
           <div className="space-y-2 md:space-y-[13px]">
             <h2 className="text-muted-foreground text-xs md:text-xl font-bold tracking-[-0.24px] md:tracking-[-0.4px]">{!isExpanded && `Case ${id}`}</h2>
             <div className="text-muted-foreground text-base md:text-[28px]  leading-[24px] md:leading-[42px]">{title}</div>
-            {isExpanded && <p className="text-white text-base md:text-lg tracking-[-0.32px] md:tracking-[-0.36px] opacity-0 animate-fadeIn " style={{ lineHeight: '160%' }}>{description}</p>}
+            {isExpanded && <p className="text-white text-base md:text-lg tracking-[-0.32px] md:tracking-[-0.36px]" style={{ lineHeight: '160%' }}>{description}</p>}
           </div>
           <button
-            onClick={() => setIsExpanded(!isExpanded)}
             className="absolute bottom-4 md:bottom-8 right-4 md:right-8 h-10 flex items-center justify-center transition-all duration-300 ease-in-out"
             aria-label={isExpanded ? "Collapse card" : "Expand card"}
           >

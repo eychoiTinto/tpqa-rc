@@ -9,7 +9,7 @@ import { Textarea } from "@/components/ui/textarea"
 
 export default function ContactForm() {
     return (
-        <div className="bg-[#0A2844] text-muted-foreground py-[120px] md:py-40 px-5 md:px-0">
+        <div id="contact" className="bg-[#0A2844] text-muted-foreground py-[120px] md:py-40 px-5 md:px-0">
             <div className="container mx-auto">
                 {/* Header */}
                 <div className="mb-10 md:mb-[60px] space-y-3 md:space-y-5">

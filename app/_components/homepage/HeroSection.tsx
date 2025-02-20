@@ -29,14 +29,14 @@ export default function Hero() {
                         more precisely, more predictably, more fairly
                     </p>
 
-                    <div className="flex justify-center md:justify-start">
+                    <a href="#contact" className="flex justify-center md:justify-start">
                         <Button
                             variant="secondary"
                             className="bg-white text-[#1C4A90] hover:bg-muted-foreground rounded-full px-5 md:px-8 py-[10px] md:py-6 text-xl"
                         >
                             평판조회 샘플요청
                         </Button>
-                    </div>
+                    </a>
                 </div>
 
                 {/* Cards Section */}
@@ -46,14 +46,17 @@ export default function Hero() {
                             {
                                 title: "평판조회란?",
                                 subtitle: "What is a Reference Check?",
+                                scrollTo: "#what"
                             },
                             {
                                 title: "평판조회의 필요성",
                                 subtitle: "Need for Reference Check",
+                                scrollTo: "#need"
                             },
                             {
                                 title: "레퍼첵의 경쟁력",
                                 subtitle: "The competitiveness of the ReferCheck",
+                                scrollTo: "#competitiveness"
                             },
                         ].map((card, index) => (
                             <div key={index} className="hero-card">
@@ -62,10 +65,10 @@ export default function Hero() {
 
                                 <hr className="hero-divider" />
 
-                                <div className="flex items-center gap-2 justify-end text-sm md:text-xl font-normal">
+                                <a href={card.scrollTo} className="flex items-center gap-2 justify-end text-sm md:text-xl font-normal">
                                     Find Out More
                                     <ChevronRight className="size-4 md:size-6"/>
-                                </div>
+                                </a>
                             </div>
                         ))}
                     </div>

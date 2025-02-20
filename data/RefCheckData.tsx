@@ -84,7 +84,7 @@ export const caseStudies: CaseStudy[] = [
     {
         id: 6,
         title: "의뢰후기",
-        subtitle: "외국계기업  People managing team 매니저",
+        subtitle: "외국계기업 People managing team 매니저",
         heading: <>
             평판조회는 경력직 채용시 후보자를<br className="hidden md:block"/>
             검증하는 중요한 방법 중 하나입니다.

@@ -82,6 +82,10 @@ body {
   border-radius: var(--radius);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* hero section  */
 /* globals.css */
 .hero-title {
@@ -94,6 +98,10 @@ body {
 
 .hero-card {
   @apply backdrop-blur-[50px] bg-white/20 border border-[rgba(255,255,255,0.2)] rounded-2xl p-6 text-white;
+}
+.hero-card:hover {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(50px);
 }
 
 .hero-card-title {
@@ -110,7 +118,7 @@ body {
 }
 
 .hero-divider {
-  @apply border-b border-[rgba(255,255,255,0.2)] mb-3;
+  @apply border-[rgba(255,255,255,0.2)] mb-3;
 }
 
 
@@ -123,7 +131,7 @@ body {
 }
 
 .border-vertical {
-  @apply hidden md:block h-4 border-l-2
+  @apply hidden md:block h-4 border-l-[1px]
 }
 .input-box {
   @apply border-white-border text-white py-6 md:py-7 rounded-xl md:rounded-2xl bg-[#ffffff0a]
@@ -166,7 +174,7 @@ body {
     @apply text-sm md:text-xl text-primary tracking-[-0.28px] md:tracking-[-0.4px] leading-6 md:leading-[32px] w-full;
   }
   .content-subheading {
-    @apply text-white/70 text-xs md:text-base font-normal;
+    @apply text-white/70 text-xs md:text-base font-normal pb-[4px];
   }
 }
 
