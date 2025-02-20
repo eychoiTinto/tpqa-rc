@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
 interface CardProps {

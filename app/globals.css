@@ -173,10 +173,25 @@ body {
 
 @layer components {
   .title-paragraph {
-      @apply text-lg md:text-2xl font-bold text-primary tracking-[-0.36px] md:tracking-[-0.48px] leading-[27px] md:leading-[38px];
+      @apply text-lg md:text-2xl font-bold text-primary tracking-[-0.36px] md:tracking-[-0.48px] leading-[27px] md:leading-[36px];
   }
 }
 
 
 
   
+
+/* Custom classes using for list items */
+/* Custom classes with unique names to avoid conflicts */
+
+.custom-list {
+  @apply text-sm md:text-xl font-normal leading-[32px] tracking-[0.4px] space-y-4;
+}
+
+.custom-list-decimal {
+  @apply pl-4 ml-4 mt-[6px] text-sm md:text-xl md:leading-[32px] list-decimal;
+}
+
+.custom-list-disc {
+  @apply list-disc list-inside pl-4 ml-4 mt-[6px];
+}

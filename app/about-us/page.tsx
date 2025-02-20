@@ -17,7 +17,7 @@ const AboutUsPage = () => {
             <div className='block md:hidden'>
                 <PageHeader title='About Us' src='/assets/about-banner-mobile.png' alt='about-us image' />
             </div>
-            <div className='space-y-[120px] md:space-y-44 mt-[60px] md:mt-44'>
+            <div className='space-y-[120px] md:space-y-44 mt-[60px] md:mt-[120px]'>
                 <div className='container px-5 md:px-0'>
                     <GreetingsSection />
                 </div>
