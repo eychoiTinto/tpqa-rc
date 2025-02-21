@@ -35,7 +35,7 @@ export default function InteractiveCard({ title, subtitle, heading, description,
             <div>
               <div className="flex gap-2 items-center w-full">
                 <p className="card-badge min-w-[73px] md:min-w-[96px] inline-flex items-center justify-center">{title}</p>
-                {!isExpanded && <div className="absolute bottom-0 left-0 right-0 p-8 text-white text-[24px] md:text-[28px] font-semibold break-keep">{subtitle}</div>}
+                {!isExpanded && <div className="absolute bottom-0 left-0 right-0 p-8 text-white text-[24px] md:text-[28px] font-semibold break-keep md:block">{subtitle}</div>}
                 {isExpanded && <span className="card-subtitle hidden md:block content-paragraph !text-white">{subtitle}</span>}
               </div>
               <div className={classNames.textArea}>
@@ -43,7 +43,7 @@ export default function InteractiveCard({ title, subtitle, heading, description,
                 <p className={classNames.description}>{description}</p>
               </div>
             </div>
-            <p className="block text-white/70 text-sm tracking-[-0.36px] animate-fadeIn md:hidden">{subtitle}</p>
+            <p className="block text-white/70 text-sm tracking-[-0.36px] animate-fadeIn md:hidden opacity-0 group-hover:opacity-100">{subtitle}</p>
           </div>
         </div>
       </div>

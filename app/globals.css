@@ -102,6 +102,12 @@ button {
   background-size: cover;
 }
 @media (max-width: 768px) {
+  .container {
+    width: calc(100% - 40px);
+  }
+  .container .container {
+    width: 100%;
+  }
   .hero-bg {
     background-image: url("/assets/hero-m.png");
   }
@@ -256,14 +262,25 @@ thead .table-text {
   display: none;
 }
 
+.table th,
+.table td {
+  border-color: #C4C4CC;
+}
 .table th {
   padding: 10px;
   background-color: #F4F5F7;
   font-weight: 500;
   border-left: 1px solid #C4C4CC;
 }
+.table.right th {
+  border-left: 0 none;
+  border-right: 1px solid #C4C4CC;
+}
 .table th:first-child {
   border-left: 0 none;
+}
+.table.right th:last-child {
+  border-right: 0 none;
 }
 
 .table td {
@@ -271,9 +288,20 @@ thead .table-text {
   border-top: 1px solid #C4C4CC;
   border-left: 1px solid #C4C4CC;
 }
+.table.right td {
+  border-left: 0 none;
+  border-right: 1px solid #C4C4CC;
+}
 .table td:first-child {
   border-left: 0 none;
 }
+.table.right td:last-child {
+  border-right: 0 none;
+}
+.table.right td:only-child {
+  border-right: 1px solid #C4C4CC;
+}
+
 
 .react-multi-carousel-track {}
 .react-multi-carousel-item {

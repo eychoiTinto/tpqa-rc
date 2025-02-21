@@ -1,4 +1,8 @@
 export default function CertificationTable() {
+    const classNames = {
+        tableContainer: 'rounded-2xl overflow-x-auto overflow-hidden border border-[#C4C4CC] mt-5',
+        table: 'table right w-full text-sm md:text-lg text-primary tracking-[-0.28px] min-w-[800px]'
+    }
     return (
         <div className="container py-20 md:py-44">
             <div >
@@ -11,56 +15,56 @@ export default function CertificationTable() {
                 </div>
 
                 {/* Table Wrapper with Scroll */}
-                <div className="rounded-2xl overflow-hidden border-[0.5px] border-gray-300">
+                <div className={classNames.tableContainer}>
                     <div className="overflow-x-auto">
-                        <table className="w-full text-lg min-w-[800px]">
-                            <thead className="bg-gray-50">
+                        <table className={classNames.table}>
+                            <thead>
                                 <tr>
-                                    <th className="table-text text-primary font-semibold min-w-[120px]">레벨/유형</th>
-                                    <th className="table-text text-primary font-semibold min-w-[260px]">
+                                    <th className="min-w-[120px]">레벨/유형</th>
+                                    <th className="min-w-[260px]">
                                         Information (기본형)
                                     </th>
-                                    <th className="table-text text-primary font-semibold min-w-[260px]">
+                                    <th className="min-w-[260px]">
                                         General (표준형) / Advanced (고급형)
                                     </th>
-                                    <th className="table-text text-primary font-semibold min-w-[260px]">
+                                    <th className="min-w-[260px]">
                                         Advanced (고급형) / Extensive(심층형)
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td className="table-text whitespace-nowrap">Associate Level</td>
-                                    <td rowSpan={3} className="border-b py-[10px] px-5">
-                                        <ul className="table-row space-y-1">
+                                    <td className="text-center whitespace-nowrap">Associate Level</td>
+                                    <td rowSpan={3}>
+                                        <ul>
                                             <li>3인 (Open Referee 3)</li>
                                             <li>3인 (Open 2 + Blind 1)</li>
                                         </ul>
                                     </td>
-                                    <td rowSpan={3} className="border-l border-b py-[10px] px-5">
-                                        <ul className="table-row space-y-1">
+                                    <td rowSpan={3}>
+                                        <ul>
                                             <li>3인 (Open 2 + Blind 1)</li>
                                             <li>4인 (Open 2 + Blind 2)</li>
                                         </ul>
                                     </td>
-                                    <td rowSpan={3} className="border-l border-b py-[10px] px-5">
-                                        <ul className="table-row space-y-1">
+                                    <td rowSpan={3}>
+                                        <ul>
                                             <li>4인 (Open 2 + Blind 2)</li>
                                             <li>5인 (Open 3 + Blind 2)</li>
                                         </ul>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td className="table-text whitespace-nowrap">Manage Level</td>
+                                    <td className="text-center whitespace-nowrap">Manage Level</td>
                                 </tr>
                                 <tr>
-                                    <td className="table-text whitespace-nowrap">Leadership Level</td>
+                                    <td className="text-center whitespace-nowrap">Leadership Level</td>
                                 </tr>
                                 <tr>
-                                    <td className="table-text">비고</td>
-                                    <td className="table-text border py-[10px] px-5">인성 + 업무 성향 중심</td>
-                                    <td className="table-text border py-[10px] px-5">실무자급 추천</td>
-                                    <td className="table-text border py-[10px] px-5">관리자급 추천</td>
+                                    <td className="text-center whitespace-nowrap">비고</td>
+                                    <td>인성 + 업무 성향 중심</td>
+                                    <td>실무자급 추천</td>
+                                    <td>관리자급 추천</td>
                                 </tr>
                             </tbody>
                         </table>
