@@ -1,6 +1,6 @@
 "use client"
-import React, { useEffect, useRef, useState } from 'react'
 import "@types/navermaps";
+import React, { useEffect, useRef, useState } from 'react'
 declare global {
     interface Window {
         naver: typeof naver;
