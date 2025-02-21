@@ -3,7 +3,7 @@ import PricingCard from './PricingCard'
 
 const MainInfo = () => {
     return (
-        <div className='px-5 md:px-0'>
+        <div>
             <h1 className='header-text mb-10'>가격정보</h1>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-6'>
                 <PricingCard

@@ -7,13 +7,10 @@ const KADTest = () => {
 
     return (
         <div className='px-5 md:px-0'>
-            <div className='container space-y-4 md:space-y-3 mt-[60px] md:mt-[100px]'>
+            <div className='container mt-[60px] md:mt-[100px]'>
                 <h2 className='text-sm md:text-2xl font-bold !text-[#1C4A90]'>KAD 인적성검사란?</h2>
-                <h1 className='hidden md:block header-text leading-[32px] md:leading-[64px]'>한국사회적성개발원이 개발한 <br />
-                    한국형 인 · 적성 측정도구</h1>
-                <h1 className='block md:hidden header-text leading-[32px] md:leading-[64px]'>국내, 해외 어느 지역이든,<br />
-                    (주)넥서스앤컴퍼니는 가능합니다.</h1>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-10 pb-14'>
+                <h1 className='header-text mt-4 md:mt-3'>한국사회적성개발원이 개발한 <br />한국형 인 · 적성 측정도구</h1>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 mt-[40px] pb-14'>
                     <div className='card-no-border'>
                         <h1 className='text-base md:text-2xl text-primary font-bold'>편리한 검사</h1>
                         <p className='card-description leading-[32px]'>한번의 검사로 인성+직무 · 적성검사를
@@ -28,7 +25,8 @@ const KADTest = () => {
                     </div>
                     <a href="https://livewp.site/wp/md/juris/practice/corporate-finance/" target="_blank">
 	                    <div className={`rounded-2xl p-4 md:p-8 space-y-2 text-primary border ${isExpanded && 'border-[#1C4A90]'} hover:border-[#1C4A90] hover:bg-[#1c4a900a] hover:cursor-pointer`}>
-	                        <h1 className='text-base md:text-2xl text-primary font-bold !text-[#1C4A90] inline-flex gap-2'>검증된 프로그램 <svg
+	                        <h1 className='card-inner-title text-base md:text-2xl text-primary font-bold !text-[#1C4A90] inline-flex gap-2'>검증된 프로그램
+														{/* <svg
 	                            xmlns="http://www.w3.org/2000/svg"
 	                            width={24}
 	                            height={24}
@@ -52,10 +50,9 @@ const KADTest = () => {
 	                                    fill="#1C4A90"
 	                                />
 	                            </g>
-	                        </svg>
+	                        </svg> */}
 	                        </h1>
-	                        <p className='card-description leading-[32px] '>300개 일반 기업 및 70개 공영기업에서<br />
-	                            채택한 검증된 프로그램</p>
+	                        <p className='card-description leading-[32px] '>300개 일반 기업 및 70개 공영기업에서<br />채택한 검증된 프로그램</p>
 	                    </div>
 	                </a>
                 </div>

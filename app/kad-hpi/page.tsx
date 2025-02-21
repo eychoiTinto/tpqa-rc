@@ -10,7 +10,7 @@ const KADHPI = () => {
             <KADTest />
             <div className='container pb-[120px] md:pb-44'>
                 <MainInfo />
-                <div className='mt-16 px-5 md:px-0'>
+                <div className='mt-16'>
                     <MajorPerfomance />
                 </div>
             </div>

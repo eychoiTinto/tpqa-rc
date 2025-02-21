@@ -16,35 +16,34 @@ export default function CertificationTable() {
                         <table className="w-full text-lg min-w-[800px]">
                             <thead className="bg-gray-50">
                                 <tr>
-                                    <th className="table-text text-primary font-semibold p-3 min-w-[120px]">레벨/유형</th>
-                                    <th className="table-text text-primary font-semibold p-3 min-w-[260px]">
+                                    <th className="table-text text-primary font-semibold min-w-[120px]">레벨/유형</th>
+                                    <th className="table-text text-primary font-semibold min-w-[260px]">
                                         Information (기본형)
                                     </th>
-                                    <th className="table-text text-primary font-semibold p-3 min-w-[260px]">
+                                    <th className="table-text text-primary font-semibold min-w-[260px]">
                                         General (표준형) / Advanced (고급형)
                                     </th>
-                                    <th className="table-text text-primary font-semibold p-3 min-w-[260px]">
+                                    <th className="table-text text-primary font-semibold min-w-[260px]">
                                         Advanced (고급형) / Extensive(심층형)
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td className="table-text p-3 hidden md:block">Associate Level</td>
-                                    <td className="table-text p-3 block md:hidden">레벨/유형</td>
-                                    <td rowSpan={3} className="border-b py-[10px] px-4">
+                                    <td className="table-text whitespace-nowrap">Associate Level</td>
+                                    <td rowSpan={3} className="border-b py-[10px] px-5">
                                         <ul className="table-row space-y-1">
                                             <li>3인 (Open Referee 3)</li>
                                             <li>3인 (Open 2 + Blind 1)</li>
                                         </ul>
                                     </td>
-                                    <td rowSpan={3} className="border-l border-b py-[10px] px-4">
+                                    <td rowSpan={3} className="border-l border-b py-[10px] px-5">
                                         <ul className="table-row space-y-1">
                                             <li>3인 (Open 2 + Blind 1)</li>
                                             <li>4인 (Open 2 + Blind 2)</li>
                                         </ul>
                                     </td>
-                                    <td rowSpan={3} className="border-l border-b py-[10px] px-4">
+                                    <td rowSpan={3} className="border-l border-b py-[10px] px-5">
                                         <ul className="table-row space-y-1">
                                             <li>4인 (Open 2 + Blind 2)</li>
                                             <li>5인 (Open 3 + Blind 2)</li>
@@ -52,18 +51,16 @@ export default function CertificationTable() {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td className="table-text p-3 hidden md:block">Manage Level</td>
-                                    <td className="table-text p-3 block md:hidden">레벨/유형</td>
+                                    <td className="table-text whitespace-nowrap">Manage Level</td>
                                 </tr>
                                 <tr>
-                                    <td className="table-text p-3 hidden md:block">Leadership Level</td>
-                                    <td className="table-text p-3 block md:hidden">레벨/유형</td>
+                                    <td className="table-text whitespace-nowrap">Leadership Level</td>
                                 </tr>
                                 <tr>
-                                    <td className="table-text p-3">비고</td>
-                                    <td className="border py-[10px] px-4">인성 + 업무 성향 중심</td>
-                                    <td className="border py-[10px] px-4">실무자급 추천</td>
-                                    <td className="border py-[10px] px-4">관리자급 추천</td>
+                                    <td className="table-text">비고</td>
+                                    <td className="table-text border py-[10px] px-5">인성 + 업무 성향 중심</td>
+                                    <td className="table-text border py-[10px] px-5">실무자급 추천</td>
+                                    <td className="table-text border py-[10px] px-5">관리자급 추천</td>
                                 </tr>
                             </tbody>
                         </table>

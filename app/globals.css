@@ -74,6 +74,7 @@ body {
 }
 ::-webkit-scrollbar {
   width: 5px;
+  height: 5px;
   background-color: var(--background);
 }
 
@@ -136,7 +137,7 @@ button {
 
 
 .header-text  {
-  @apply text-xl md:text-3xl lg:text-[40px] font-semibold leading-[32px] md:leading-[64px];
+  @apply text-xl md:text-3xl lg:text-[40px] font-semibold leading-[32px] md:leading-[1.6];
 }
 
 .footer-subtext {
@@ -174,10 +175,13 @@ button {
 
 /* table */
 .table-text {
-  @apply border py-3 px-4 text-center;
+  @apply border text-sm md:text-lg py-[9px] p-2.5 md:p-5 md:py-[10px] text-center;
+}
+thead .table-text {
+  @apply whitespace-nowrap;
 }
 .table-row {
-  @apply list-disc list-inside ml-4 space-y-2;
+  @apply list-disc list-inside ml-4 space-y-2 text-sm md:text-lg;
 }
 .br-mobile {
   @apply block sm:hidden
@@ -223,4 +227,27 @@ button {
 }
 .mo-menu.hover\:bg-accent:hover {
   background-color: transparent !important;
+}
+.card-inner-title {
+  position: relative;
+}
+.card-inner-title::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: calc(100% + 8px);
+  width: 24px;
+  height: 24px;
+  background-image: url('/assets/icon/arrow_outward.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .card-inner-title::after {
+    left: calc(100% + 4px);
+    width: 16px;
+    height: 16px;
+    background-image: url('/assets/icon/arrow_outward-sm.svg');
+  }
 }
