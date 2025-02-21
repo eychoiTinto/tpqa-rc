@@ -6,7 +6,7 @@ const SectionTitle = ({ children }: { children: React.ReactNode }) => (
 
 
 const SubText = ({ children }: { children: React.ReactNode }) => (
-    <div className="text-gray-500 mt-5">{children}</div>
+    <div className="text-white/50 mt-5">{children}</div>
 );
 
 const HighlightText = ({ children }: { children: React.ReactNode }) => (

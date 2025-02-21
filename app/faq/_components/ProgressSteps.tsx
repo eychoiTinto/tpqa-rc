@@ -31,7 +31,7 @@ export default function ProgressSteps({ currentStep = 1, steps = [], title, subt
                     <p className={`${backgroundGray ? 'bg-[#F7F7F7]' : 'bg-white'} px-4 text-base md:text-xl text-[#1C4A90] font-bold`}>
                         {title}
                     </p>
-                    <p className={` w-full ${backgroundGray ? 'bg-[#F7F7F7]' : 'bg-white'} px-4 absolute text-sm md:text-xl text-[#1C4A90] font-normal tracking-[0.32px] left-1/2 -translate-x-1/2`}>
+                    <p className={` w-full ${backgroundGray ? 'bg-[#F7F7F7]' : 'bg-white'} px-4 absolute text-[16px] text-[#1C4A90] font-normal tracking-[0.32px] left-1/2 -translate-x-1/2`}>
                         {subtitle}
                     </p>
                 </div>
