@@ -141,7 +141,7 @@ button {
 }
 
 .footer-subtext {
-  @apply flex gap-[10px] items-center text-sm md:text-base
+  @apply flex gap-[10px] items-center text-sm md:text-base;
 }
 
 .border-vertical {
@@ -254,4 +254,23 @@ thead .table-text {
 
 .card-subtitle br {
   display: none;
+}
+
+.table th {
+  padding: 10px;
+  background-color: #F4F5F7;
+  font-weight: 500;
+  border-left: 1px solid #C4C4CC;
+}
+.table th:first-child {
+  border-left: 0 none;
+}
+
+.table td {
+  padding: 10px 20px;
+  border-top: 1px solid #C4C4CC;
+  border-left: 1px solid #C4C4CC;
+}
+.table td:first-child {
+  border-left: 0 none;
 }
