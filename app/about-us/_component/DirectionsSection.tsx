@@ -1,37 +1,60 @@
 "use client"
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
+import "@types/navermaps";
+declare global {
+    interface Window {
+        naver: typeof naver;
+    }
+}
 
 const DirectionsSection = () => {
     const mapRef = useRef<HTMLDivElement>(null);
+    const [mapLoaded, setMapLoaded] = useState(false);
 
     useEffect(() => {
-        if (document.getElementById("naver-map-script")) {
-            initMap();
-            return;
+        // 이미 스크립트가 로드된 경우
+        if (window.naver) {
+        initMap();
+        return;
         }
 
+        // 스크립트가 중복 추가되지 않도록 확인
+        if (!document.getElementById("naver-map-script")) {
         const script = document.createElement("script");
         script.id = "naver-map-script";
         script.src = `https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=5alxaf9vys`;
         script.async = true;
-        script.onload = initMap;
-
+        script.onload = () => {
+            setMapLoaded(true);
+        };
         document.body.appendChild(script);
-
-        function initMap() {
-            if (!mapRef.current || !window.naver) return;
-
-            const map = new window.naver.maps.Map(mapRef.current, {
-            center: new window.naver.maps.LatLng(37.5665, 126.9780),
-            zoom: 15,
-            });
-
-            new window.naver.maps.Marker({
-            position: new window.naver.maps.LatLng(37.5665, 126.9780),
-            map,
-            });
+        } else {
+        setMapLoaded(true);
         }
     }, []);
+
+    // 지도가 로드된 후 실행
+    useEffect(() => {
+        if (mapLoaded) {
+        initMap();
+        }
+    }, [mapLoaded]);
+    
+
+    function initMap() {
+        if (!mapRef.current || !window.naver) return;
+
+        const map = new window.naver.maps.Map(mapRef.current, {
+        center: new window.naver.maps.LatLng(37.5665, 126.9780),
+        zoom: 15,
+        });
+
+        new window.naver.maps.Marker({
+        position: new window.naver.maps.LatLng(37.5665, 126.9780),
+        map,
+        });
+    }
+
     return (
         <div className='bg-primary pt-[120px] md:pt-[160px] md:pb-[80px]'>
             <h1 className='header-text text-muted-foreground text-center'>오시는 길</h1>
