@@ -13,7 +13,7 @@ const CustomerReviewSection = () => {
     const [skip, setSkip] = useState(4)
 
     return (
-        <div className='bg-white container mx-auto px-5 md:px-0'>
+        <div className='bg-white container mx-auto'>
             <h2 className='header-text'>고객사 의뢰 후기 및 검증 사례</h2>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 md:mt-16'>
                 {

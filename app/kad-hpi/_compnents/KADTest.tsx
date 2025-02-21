@@ -25,33 +25,7 @@ const KADTest = () => {
                     </div>
                     <a href="https://livewp.site/wp/md/juris/practice/corporate-finance/" target="_blank">
 	                    <div className={`rounded-2xl p-4 md:p-8 space-y-2 text-primary border ${isExpanded && 'border-[#1C4A90]'} hover:border-[#1C4A90] hover:bg-[#1c4a900a] hover:cursor-pointer`}>
-	                        <h1 className='card-inner-title text-base md:text-2xl text-primary font-bold !text-[#1C4A90] inline-flex gap-2'>검증된 프로그램
-														{/* <svg
-	                            xmlns="http://www.w3.org/2000/svg"
-	                            width={24}
-	                            height={24}
-	                            viewBox="0 0 24 24"
-	                            fill="none"
-	                        >
-	                            <mask
-	                                id="mask0_24_1219"
-	                                style={{ maskType: "alpha" }}
-	                                maskUnits="userSpaceOnUse"
-	                                x={0}
-	                                y={0}
-	                                width={24}
-	                                height={24}
-	                            >
-	                                <rect width={24} height={24} fill="#D9D9D9" />
-	                            </mask>
-	                            <g mask="url(#mask0_24_1219)">
-	                                <path
-	                                    d="M16.1443 7.80375L6.8115 17.127C6.673 17.2653 6.499 17.3329 6.2895 17.3298C6.07984 17.3266 5.90575 17.2558 5.76725 17.1173C5.62892 16.9788 5.55975 16.8063 5.55975 16.6C5.55975 16.3937 5.62892 16.2213 5.76725 16.0828L15.0905 6.75H6.89425C6.68175 6.75 6.50359 6.67808 6.35975 6.53425C6.21609 6.39042 6.14425 6.21225 6.14425 5.99975C6.14425 5.78708 6.21609 5.609 6.35975 5.4655C6.50359 5.32183 6.68175 5.25 6.89425 5.25H16.7403C16.9964 5.25 17.2111 5.33658 17.3843 5.50975C17.5576 5.68308 17.6443 5.89775 17.6443 6.15375V16C17.6443 16.2125 17.5723 16.3906 17.4285 16.5343C17.2847 16.6781 17.1065 16.75 16.894 16.75C16.6813 16.75 16.5032 16.6781 16.3595 16.5343C16.216 16.3906 16.1443 16.2125 16.1443 16V7.80375Z"
-	                                    fill="#1C4A90"
-	                                />
-	                            </g>
-	                        </svg> */}
-	                        </h1>
+	                        <h1 className='card-inner-title text-base md:text-2xl text-primary font-bold !text-[#1C4A90] inline-flex gap-2'>검증된 프로그램</h1>
 	                        <p className='card-description leading-[32px] '>300개 일반 기업 및 70개 공영기업에서<br />채택한 검증된 프로그램</p>
 	                    </div>
 	                </a>

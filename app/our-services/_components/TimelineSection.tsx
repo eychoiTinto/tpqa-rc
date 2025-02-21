@@ -3,7 +3,7 @@ import React from 'react'
 
 const TimelineSection = () => {
     return (
-        <div className='bg-primary py-[120px] md:py-40 px-5 md:px-0'>
+        <div className='bg-primary py-[120px] md:py-40'>
             <h1 className='header-text text-center !text-muted-foreground leading-[32px] md:leading-[64px]'>체계적인 프로세스로<br />
                 더 확실한 평판조회</h1>
 
@@ -17,7 +17,7 @@ const TimelineSection = () => {
                         {timelineData.map((step, index) => (
                             <div key={index} className="flex gap-[10px] md:gap-7 relative">
                                 {/* Title */}
-                                <div className="min-w-[70px] md:w-[165px] text-right font-medium text-white text-sm md:text-2xl mr-[10px] md:mr-7">{step.title}</div>
+                                <div className="min-w-[70px] md:w-[165px] text-right font-medium text-white text-sm md:text-2xl mr-[10px] md:mr-7 break-keep">{step.title}</div>
 
                                 {/* Dot */}
 

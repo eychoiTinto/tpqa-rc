@@ -29,7 +29,8 @@ export default function InteractiveCard({ title, subtitle, heading, description,
             <div>
               <div className="flex gap-2 items-center w-full">
                 <p className="card-badge min-w-[73px] md:min-w-[96px] inline-flex items-center justify-center">{title}</p>
-                {isExpanded && <span className="hidden md:block content-paragraph !text-white">{subtitle}</span>}
+                {!isExpanded && <div className="absolute bottom-0 left-0 right-0 p-8 text-white text-[24px] md:text-[28px] font-semibold break-keep">{subtitle}</div>}
+                {isExpanded && <span className="card-subtitle hidden md:block content-paragraph !text-white">{subtitle}</span>}
                 {isExpanded && <span onClick={() => setIsExpanded(false)} className="flex justify-end items-center md:hidden content-paragraph !text-white ml-4"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
                   <path d="M7.69985 21.0769L6.92285 20.2999L13.2229 13.9999L6.92285 7.69985L7.69985 6.92285L13.9999 13.2229L20.2999 6.92285L21.0769 7.69985L14.7769 13.9999L21.0769 20.2999L20.2999 21.0769L13.9999 14.7769L7.69985 21.0769Z" fill="white" />
                 </svg></span>}

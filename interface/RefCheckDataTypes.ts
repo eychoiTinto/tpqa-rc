@@ -4,7 +4,7 @@ export interface CaseStudy {
     id: number
     title: string
     backgroundImage: string;
-    subtitle: string;
+    subtitle: ReactNode;
     heading: ReactNode;
     description: ReactNode;
 }

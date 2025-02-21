@@ -27,13 +27,13 @@ const CommitmentSectionMobile = (
             <div className='grid grid-cols-1 gap-3'>
                 {
                     data?.map(card =>
-                        <Card className='h-[320px] rounded-2xl md:rounded-xl flex flex-col justify-between' key={card.id} style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${card.url})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                        <Card className='min-h-[320px] rounded-2xl md:rounded-xl flex flex-col justify-between' key={card.id} style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${card.url})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                             <CardHeader>
                                 <div className='flex justify-between text-xs text-[#c5c3c3] opacity-[0.8]'>
                                     <p>{card.title}</p>
                                     <p>{`0${card.id}`}</p>
                                 </div>
-                                <h2 className='text-[18px] text-muted-foreground max-w-[262px]'>{card.heading}</h2>
+                                <h2 className='text-[18px] text-muted-foreground font-bold max-w-[262px] break-keep'>{card.heading}</h2>
                             </CardHeader>
                             <CardContent className='text-muted-foreground'>
                                 <div>

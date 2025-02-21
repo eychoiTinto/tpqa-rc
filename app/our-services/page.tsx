@@ -11,7 +11,7 @@ const OurServices = () => {
     return (
         <div>
             <PageHeader title='Our Services' src='/assets/ourservices.png' alt='our services header' />
-            <div className='px-5 md:px-0 space-y-28 md:space-y-[160px] container'>
+            <div className='space-y-28 md:space-y-[160px] container'>
                 <ReputationInquirySection />
                 <InquiryTimeSection />
                 <ReferenceCheckKeyItems />

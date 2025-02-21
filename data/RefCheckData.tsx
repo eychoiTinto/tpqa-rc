@@ -5,21 +5,21 @@ export const caseStudies: CaseStudy[] = [
         id: 1,
         title: "검증사레",
         backgroundImage: '/assets/about-carousel1.png',
-        subtitle: "국내 유통 대기업 인사운영팀 과장",
+        subtitle: <>국내 유통 대기업<br /> 인사운영팀 과장</>,
         heading: <>
             상사, 동료, 부하직원 등 여러 직급의 <br className="hidden md:block"/>
             조회인을 통해 다각적 관점의 평판을 확인<br className="hidden md:block"/>
             할 수 있어 매우 유익했습니다.
         </>,
         description: <>
-            전직장 상사들에게는 팔로우십이 뛰어나고 수용성이 높은 인재라는 평가를 받았으나, 함께<br className="hidden md:block"/>근무했던 부하직원들에게는 상명하복을 강요하는 리더라는 평가를 받았습니다. 차기 팀장이<br className="hidden md:block"/>될 수 있는 중요한 포지션이었기에, 채용 최종 결정을 내리는데  도움이 되었습니다.
+            전직장 상사들에게는 팔로우십이 뛰어나고 수용성이 높은 인재라는 평가를 받았으나, 함께<br className="hidden sm:block"/> 근무했던 부하직원들에게는 상명하복을 강요하는 리더라는 평가를 받았습니다. 차기 팀장이<br className="hidden sm:block"/>될 수 있는 중요한 포지션이었기에, 채용 최종 결정을 내리는데  도움이 되었습니다.
         </>,
     },
     {
         id: 2,
         title: "의뢰후기 ",
         backgroundImage: '/assets/about-carousel2.png', 
-        subtitle: "국내 반도체 대기업 인사팀 수석",
+        subtitle: <>국내 반도체 대기업<br /> 인사팀 수석</>,
         heading: <>
             단순히 좋고 나쁨이 아닌, 실제 에피소드를 바탕으로<br className="hidden md:block"/>
             후보자에 대해 면밀하게 파악할 수 있는 보고서입니다.
@@ -35,7 +35,7 @@ export const caseStudies: CaseStudy[] = [
         id: 3,
         title: "검증사례",
         backgroundImage: '/assets/about-carousel3.png',
-        subtitle: "바이오벤처 J사 인사팀 팀장",
+        subtitle: <>바이오벤처 J사<br /> 인사팀 팀장</>,
         heading: <>
             평판조회 결과 허위 성과와 징계 이력을 확인하여<br className="hidden md:block"/>
             채용 실패를 예방할 수 있었습니다.
@@ -50,7 +50,7 @@ export const caseStudies: CaseStudy[] = [
     {
         id: 4,
         title: "검증사례 ",
-        subtitle: "국내 금융사 인사팀 차장",
+        subtitle: <>국내 금융사<br /> 인사팀 차장</>,
         heading: <>
             두 명의 후보자를 놓고 고민하는 과정에서<br className="hidden md:block"/>
             평판조회 결과가 큰 도움이 되었습니다.
@@ -67,7 +67,7 @@ export const caseStudies: CaseStudy[] = [
     {
         id: 5,
         title: "의뢰후기",
-        subtitle: "IT스타트업 L사 대표",
+        subtitle: <>IT스타트업 L사<br /> 대표</>,
         heading: <>
             스타트업 조직은 인원 한 명 한 명 채용에<br className="hidden md:block"/>
             신중을 기할 수 밖에 없습니다. 앞으로 경력직 채용시<br className="hidden md:block"/>
@@ -84,7 +84,7 @@ export const caseStudies: CaseStudy[] = [
     {
         id: 6,
         title: "의뢰후기",
-        subtitle: "외국계기업 People managing team 매니저",
+        subtitle: <>외국계기업<br /> People managing team 매니저</>,
         heading: <>
             평판조회는 경력직 채용시 후보자를<br className="hidden md:block"/>
             검증하는 중요한 방법 중 하나입니다.
@@ -101,7 +101,7 @@ export const caseStudies: CaseStudy[] = [
     {
         id: 7,
         title: "의뢰후기",
-        subtitle: "국내 식품 대기업 인사담당자",
+        subtitle: <>국내 식품 대기업<br /> 인사담당자</>,
         heading: <>
             평판조회 보고서는 면접 등 채용 과정에서<br className="hidden md:block"/>
             후보자 검증(크로스체크)을 위한 귀중한 자료가 되어줄 뿐만 아니라,<br className="hidden md:block"/>
@@ -119,7 +119,7 @@ export const caseStudies: CaseStudy[] = [
     {
         id: 8,
         title: "의뢰후기 ",
-        subtitle: "국내 게임사 인사팀 대리",
+        subtitle: <>국내 게임사<br/> 인사팀 대리</>,
         heading: <>
             채용이 잦은 현장의 평판조회는 인사팀이 직접 담당하는 것보다<br className="hidden md:block"/>
             외부 전문 업체에게 맡기는 것이 보다 효율적입니다.
@@ -136,7 +136,7 @@ export const caseStudies: CaseStudy[] = [
     {
         id: 9,
         title: "의뢰후기",
-        subtitle: "국내 건설 대기업 인사팀 Pro",
+        subtitle: <>국내 건설 대기업<br/> 인사팀 Pro</>,
         heading: <>
             면접에서 역량을 제대로발휘하지 못했던<br className="hidden md:block"/>
             후보자의 진면목을 발견하여 우수 인재를 놓치지 않았습니다.
@@ -151,7 +151,7 @@ export const caseStudies: CaseStudy[] = [
     {
         id: 10,
         title: "의뢰후기 ",
-        subtitle: "공공기관 H사 인사담당자",
+        subtitle: <>공공기관 H사<br/> 인사담당자</>,
         heading: <>
             각 직군 별, 후보자 별 핵심포인트가 파악된 내용이<br className="hidden md:block"/>
             보고서에 담겨 있는 것이 인상적입니다.
@@ -165,7 +165,7 @@ export const caseStudies: CaseStudy[] = [
     {
         id: 11,
         title: "검증사례",
-        subtitle: "글로벌기업 S사 임원급 포지션",
+        subtitle: <>글로벌기업 S사<br/> 임원급 포지션</>,
         heading: <>
             화려한 경력의 후보자가 평판조회로 근태 불량, 공금횡령 등이<br className="hidden md:block"/>
             드러나 채용을 막아 회사 명예 실추를 방지했습니다.
@@ -179,7 +179,7 @@ export const caseStudies: CaseStudy[] = [
     {
         id: 12,
         title: "검증사례",
-        subtitle: "국내 H 카드사 실무자급 포지션",
+        subtitle: <>국내 H 카드사<br/> 실무자급 포지션</>,
         heading: <>
             성과는 뛰어났지만 과신과 고자세로<br className="hidden md:block"/>
             부정적 평가를 받은 후보를 평판조회 결과를<br className="hidden md:block"/>
@@ -197,7 +197,7 @@ export const caseStudies: CaseStudy[] = [
     {
         id: 13,
         title: "검증사례",
-        subtitle: "유망 스타트업 C사 관리자급 포지션",
+        subtitle: <>유망 스타트업 C사<br/> 관리자급 포지션</>,
         heading: <>
             우수한 경력의 후보자가 평판조회로 법인카드 유용과<br className="hidden md:block"/>
             부도덕한 사생활이 드러나 채용을 피할 수 있었습니다.
@@ -213,7 +213,7 @@ export const caseStudies: CaseStudy[] = [
     {
         id: 14,
         title: "검증사례",
-        subtitle: "F&B 대기업 임원급 포지션",
+        subtitle: <>F&B 대기업<br/> 임원급 포지션</>,
         heading: <>
             전문가로 보였던 후보가 평판조회로<br className="hidden md:block"/>
             경력 과장과 팀원 성과 무임승차가 드러나 채용이 취소되었습니다.

@@ -3,7 +3,7 @@ import React from 'react'
 const MajorPerfomance = () => {
     return (
         <div>
-            <h2 className='card-title'>검사 내용</h2>
+            <h2 className='card-title'>주요 실적</h2>
             <div className="rounded-2xl overflow-x-auto overflow-hidden border-[0.1px] mt-10">
                 <table className="w-full text-sm md:text-lg text-primary tracking-[-0.28px] md:tracking-[0.36px] ">
                     <thead>

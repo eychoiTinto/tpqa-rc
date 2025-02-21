@@ -35,7 +35,7 @@ const ExpandingCards = ({ data }: Props) => {
                             {card.description}
                         </div>
                         {
-                            activeId !== card.id && <h4 className={`transition-all duration-500 delay-1000`}>{card.title}</h4>
+                            activeId !== card.id && <h4 className={`transition-all duration-500 delay-1000 whitespace-nowrap`}>{card.title}</h4>
                         }
 
                     </div>

@@ -4,7 +4,7 @@ const DirectionsSection = () => {
     return (
         <div className='bg-primary pt-[120px] md:pt-[160px] md:pb-[80px]'>
             <h1 className='header-text text-muted-foreground text-center'>오시는 길</h1>
-            <div className='container mx-auto mt-[100px] md:mt-32 px-5 md:px-0'>
+            <div className='container mx-auto mt-[100px] md:mt-32'>
                 <iframe src="https://map.naver.com/p/entry/address/14142512.2388429,4509627.3986171,%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EC%84%A0%EB%A6%89%EB%A1%9C93%EA%B8%B8%2054?c=15.38,0,0,0,dh" className='w-full rounded-[16px] h-[200px] md:h-[500px]'></iframe>
                 <div className='mt-20 flex flex-col md:flex-row justify-between items-start'>
                     <div className='flex-1 space-y-[60px] md:space-y-20'>

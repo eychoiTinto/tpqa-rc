@@ -15,7 +15,7 @@ const FAQPage = () => {
     return (
         <div>
             <PageHeader alt='faq-page-header' title='FAQ' src='/assets/faq-header.png' />
-            <div className='container mt-[60px] md:mt-[100px] px-5 md:px-0'>
+            <div className='container mt-[60px] md:mt-[100px]'>
                 <h1 className='header-text mb-10'>자주하는 질문</h1>
                 <div>
                     <div className="w-full space-y-3 md:space-y-4">
@@ -47,7 +47,7 @@ const FAQPage = () => {
             </div>
             <div>
                 <div className='bg-[#F7F7F7] mt-[120px] md:mt-[160px]'>
-                    <div className='container space-y-16 py-[120px] md:py-[160px] px-5 md:px-0'>
+                    <div className='container space-y-16 py-[120px] md:py-[160px]'>
                         <FAQBackground
                             key={'faq1'}
                             cardBackground={false}
@@ -98,7 +98,7 @@ const FAQPage = () => {
                     </div>
 
                 </div>
-                <div className='container space-y-16 py-[120px] md:py-[160px] px-5 md:px-0'>
+                <div className='container space-y-16 py-[120px] md:py-[160px]'>
                     <FAQBackground
                         key={'faq2'}
 

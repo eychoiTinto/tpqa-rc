@@ -5,7 +5,7 @@ import { Button } from './ui/button'
 const Footer = () => {
     return (
         <div className='bg-[#0A2844] border-t-2 border-white-border w-full'>
-            <div className='container py-[60px] flex flex-col md:flex-row justify-between items-center w-full px-5 md:px-0'>
+            <div className='container py-[60px] flex flex-col md:flex-row justify-between items-center w-full'>
                 <div className='space-y-7 flex-1 w-full'>
                     <img src="logo.svg" alt="refercheck logo" className="h-7" />
                     <div className='w-full'>
@@ -59,7 +59,7 @@ const Footer = () => {
             </div>
             {/* footer 2 */}
             <div className="bg-[rgba(255,255,255,0.02)] py-6 border-t border-white-border">
-                <div className='container mx-auto flex justify-between items-center text-muted-foreground text-sm md:text-base tracking-[-0.28px] px-5 md:px-0 '>
+                <div className='container mx-auto flex justify-between items-center text-muted-foreground text-sm md:text-base tracking-[-0.28px]'>
                     <span>&copy; {new Date().getFullYear()} ReferCheck Co.,Ltd All rights reserved.</span>
                     <a href="https://www.linkedin.com/showcase/refercheck-official" target="_blank">
                         <span>
