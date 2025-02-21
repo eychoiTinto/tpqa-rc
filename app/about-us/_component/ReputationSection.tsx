@@ -4,7 +4,7 @@ const ReputationSection = () => {
         <div className='px-5 md:px-0'>
             <h1 className='header-text text-center'>평판조회 핵심내용</h1>
             <div className="py-[60px] md:my-[80px] bg-white w-full space-y-10 md:space-y-48">
-                <div className="flex flex-col md:flex-row gap-6 justify-between items-center container mx-auto">
+                <div className="flex flex-col md:flex-row gap-6 justify-between items-center">
                     <div className="flex-1 space-y-5 w-full">
                         <h1 className="header-text max-w-96 tracking-[-0.8px] leading-[32px] md:leading-[64px]">
                             특별히 평판조회<br />
@@ -28,7 +28,7 @@ const ReputationSection = () => {
                         <img src="/assets/pie-chart-02.png" className="w-full" alt="pie chart" />
                     </div>
                 </div>
-                <div className="flex flex-col md:flex-row gap-6 justify-between items-center container mx-auto w-full">
+                <div className="flex flex-col md:flex-row gap-6 justify-between items-center w-full">
                     <div className="flex-1 space-y-5 w-full">
                         <div className="header-text max-w-[578px] tracking-[-0.8px]  leading-[32px] md:leading-[64px]">
                             <p>기업별로 62<span className="text-[24px]">%</span>~84<span className="text-[24px]">%</span>은</p>

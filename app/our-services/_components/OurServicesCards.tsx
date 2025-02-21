@@ -9,7 +9,7 @@ import * as React from "react";
 // Define reusable Tailwind classes
 const badgeStyles = "text-xs md:text-base w-fit px-[10px] md:px-4 py-1.5 rounded-full";
 const titleStyles = "text-base md:text-[28px] text-primary font-semibold tracking-[-0.56px] md:leading-[44px]";
-const subtitleStyles = "text-sm md:text-xl text-[#202021] tracking-[-0.4px]";
+const subtitleStyles = "text-base md:text-xl text-[#202021] tracking-[-0.4px] leading-[24px] md:leading-[44.8px]";
 const descriptionWrapperStyles = "overflow-hidden transition-all duration-300 max-h-[500px]";
 const buttonStyles = "hidden md:block w-full h-[80px] text-xl border-none font-normal !rounded-b-2xl";
 const buttonIconStyles = "flex items-center justify-center gap-2 w-full px-8";
@@ -26,7 +26,7 @@ export default function OurServicesCard({
     <div>
       <Card className={`border ${isExpanded ? 'bg-[#F4F5F7]' : 'bg-muted-foreground'} border-[#C4C4CC] shadow-none rounded-2xl p-0`}>
         <CardContent className="p-0">
-          <div className="p-8">
+          <div className="p-4 md:p-8">
             <div
               className={`${badgeStyles} ${badge === "특정 직무/직급"
                 ? "bg-none border border-gray-500 text-primary"
@@ -35,7 +35,7 @@ export default function OurServicesCard({
             >
               {badge}
             </div>
-            <div className="mt-4 md:mt-8">
+            <div className="mt-4 md:mt-8 mb-4 md:mb-0">
               <div className="space-y-1">
                 <div className={titleStyles}>{title}</div>
                 <div className={subtitleStyles}>{subtitle}</div>
@@ -43,7 +43,7 @@ export default function OurServicesCard({
             </div>
             {/* Mobile auto expanding */}
             <div className="block md:hidden space-y-4">
-              <hr className="max-w-[100%] mx-auto border" />
+              <hr className="max-w-[100%] mx-auto border-px" />
               <div className={descriptionWrapperStyles}>
                 <div className="content-paragraph">{description}</div>
               </div>

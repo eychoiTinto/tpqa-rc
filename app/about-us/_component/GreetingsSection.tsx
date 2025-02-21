@@ -1,7 +1,7 @@
 
 const SectionContent = ({ title, content }: { title: string, content: string }) => {
     return (
-        <div className='space-y-4'>
+        <div className='space-y-[10px] md:space-y-4'>
             <p className='title-paragraph'>{title}</p>
             <p className='content-paragraph'>{content}</p>
         </div>

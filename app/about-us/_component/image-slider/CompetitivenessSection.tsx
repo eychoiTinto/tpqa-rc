@@ -10,7 +10,7 @@ const CompetitivenessSection = () => {
             <div className='basis-2/3 space-y-[12px] md:space-y-6'>
                 <div className='card'>
                     <h1 className='card-title'>방대한 DB 및 인적 네트워크 활용</h1>
-                    <p className='card-description '>방대한 DB와 오랫동안<br className="br-mobile" />축적한 인적 네트워크를 활용한 평판조회 서비스</p>
+                    <p className='card-description '>방대한 DB와 오랫동안<br className="br-mobile" /> 축적한 인적 네트워크를 활용한 평판조회 서비스</p>
                 </div>
                 <div className='card'>
                     <h1 className='card-title'>대기업 그룹사 및 외국계 기업의 풍부한 경험 보유</h1>

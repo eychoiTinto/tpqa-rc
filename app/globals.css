@@ -114,11 +114,7 @@ button {
 }
 
 .hero-card {
-  @apply backdrop-blur-[50px] bg-white/20 border border-[rgba(255,255,255,0.2)] rounded-2xl p-6 text-white;
-}
-.hero-card:hover {
-  background: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(50px);
+  @apply backdrop-blur-[50px] bg-white/20 border border-[rgba(255,255,255,0.2)] rounded-2xl p-6 text-white bg-opacity-50;
 }
 
 .hero-card-title {

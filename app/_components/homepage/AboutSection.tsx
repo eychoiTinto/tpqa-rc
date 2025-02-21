@@ -15,11 +15,11 @@ const HighlightText = ({ children }: { children: React.ReactNode }) => (
 
 export default function AboutSection() {
     return (
-        <div id="what" className="bg-primary text-white relative overflow-hidden">
-            <div className="pt-[120px] md:py-[200px] space-y-[108px] md:space-y-60 px-5 md:px-0">
-                <div className="grid md:grid-cols-2 justify-between items-center container mx-auto">
+        <div id="what" className="bg-primary text-white relative overflow-hidden w-full">
+            <div className="pt-[120px] md:py-[200px] space-y-[108px] md:space-y-60 px-5 md:px-0 w-full">
+                <div className="flex flex-col justify-between items-start md:grid grid-cols-2 container mx-auto w-full">
                     {/* Left Content */}
-                    <div className="space-y-6 ">
+                    <div className="space-y-6 w-full ">
                         <SectionTitle>평판조회란?</SectionTitle>
                         <HighlightText>
                             <h1 className='leading-tight tracking-[-0.8px]' style={{ lineHeight: '160%' }}>
@@ -36,7 +36,7 @@ export default function AboutSection() {
                     </div>
 
                     {/* Right Content - Chat Bubbles */}
-                    <div className="flex flex-col gap-6 md:gap-[72px] bottom-24 mt-[70px] md:mt-0">
+                    <div className="flex flex-col gap-6 md:gap-[72px] md:relative right-0 bottom-24 mt-[70px] md:mt-0 justify-between items-center w-full">
                         <ChatBubble position='left' message="단순 면접만으로는 지원자의 진짜 성격과 협업 태도를 알기 어려워요" />
                         <ChatBubble position='right' message="서류만 보면 완벽해 보이는데, 실제로 어떤 사람인지 확신이 안 들어요." />
                         <ChatBubble position='left' message="채용 후 문제가 생길까 걱정돼서 미리 더 확실히 검증하고 싶어요." />
@@ -56,23 +56,25 @@ interface ChatBubbleProps {
 }
 function ChatBubble({ message, className = "", position = "left" }: ChatBubbleProps & { position?: "left" | "right" }) {
     return (
-        <div className={`w-full ${position === 'right' && 'ml-[65px]'}`}>
-            <div className={`bg-[#3B5369] rounded-2xl md:rounded-full px-5 md:px-10 py-[10px] md:py-6 text-white ${className} relative w-full max-w-[254px] md:max-w-[610px] font-medium`}>
-                <p className="text-sm md:text-xl tracking-[-0.28px] md:tracking-[-0.4px] text-left md:text-center">{message}</p>
-                <div className={`absolute ${position === 'left' ? '-bottom-3 left-5' : '-bottom-3 right-5'}`}>
-                    <svg
-                        width="36"
-                        height="28"
-                        viewBox="0 0 36 28"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className={`absolute -top-6 ${position === "left" ? "left-8" : "right-8"} ${position === "right" ? "transform -scale-x-100" : ""}`}
-                    >
-                        <path
-                            d="M25.791 28C16.6567 28 1.25373 9.33333 0 0H36C27.403 1.76101 13.3254 9.82641 25.791 28Z"
-                            fill="#3B5369"
-                        />
-                    </svg>
+        <div className='w-full flex items-center justify-center overflow-x-clip'>
+            <div className={`w-full ${position === 'right' && 'ml-[80px]'}`}>
+                <div className={`bg-[#3B5369] rounded-2xl md:rounded-full px-5 md:px-10 py-[10px] md:py-6 text-white ${className} relative w-full  max-w-[254px] md:max-w-[610px] font-medium`}>
+                    <p className="text-sm md:text-xl tracking-[-0.28px] md:tracking-[-0.4px] text-left md:text-center">{message}</p>
+                    <div className={`absolute ${position === 'left' ? '-bottom-3 left-5' : '-bottom-3 right-5'}`}>
+                        <svg
+                            width="36"
+                            height="28"
+                            viewBox="0 0 36 28"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            className={`absolute -top-6 ${position === "left" ? "left-2" : "right-2"} ${position === "right" ? "transform -scale-x-100" : ""}`}
+                        >
+                            <path
+                                d="M25.791 28C16.6567 28 1.25373 9.33333 0 0H36C27.403 1.76101 13.3254 9.82641 25.791 28Z"
+                                fill="#3B5369"
+                            />
+                        </svg>
+                    </div>
                 </div>
             </div>
         </div>
@@ -99,7 +101,7 @@ function Wave() {
                         있으며, 채용 결정에 중요한 영향을 미치는<br />
                         활동으로 평가 받고 있습니다.<br />
                         조사에 따르면,  90% 이상의 기업이<br />
-                        평판조회를 실시하고 있는 것으로<br/>
+                        평판조회를 실시하고 있는 것으로<br />
                         나타났습니다.
                     </p>
                 </ HighlightText>

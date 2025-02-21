@@ -12,7 +12,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ title, features, price, bgCol
         <div className={`p-4 md:p-8 rounded-2xl text-muted-foreground space-y-[14px] ${bgColor}`}>
             <h1 className='text-base md:text-[28px] font-semibold  leading-[25.6px] md:leading-[44.8px] tracking-[-0.56px] text-muted-foreground'>{title}</h1>
             <div className='ml-4'>
-                <ul className='list-disc list-inside font-normal space-y-1 text-sm md:text-xl tracking-[0.28px] md:tracking-[-0.4px]'>
+                <ul className='list-disc list-outside font-normal space-y-1 text-sm md:text-xl leading-[22.4px] md:leading-[32px] tracking-[-0.28px] md:tracking-[-0.4px]'>
                     {features.map((feature, index) => (
                         <li key={index}>{feature}</li>
                     ))}

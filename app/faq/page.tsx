@@ -1,11 +1,17 @@
+'use client'
 import PageHeader from '@/components/PageHeader'
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible'
 import { faqs } from '@/data/FaqData'
-import { ChevronUp } from 'lucide-react'
+import { ChevronDown } from 'lucide-react'
+import { useState } from 'react'
 import FAQBackground from './_components/AcademicBackground'
 import ProgressSteps from './_components/ProgressSteps'
 
 const FAQPage = () => {
+    const [openIndex, setOpenIndex] = useState<number | null>(null);
+    const handleToggle = (index: number) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
     return (
         <div>
             <PageHeader alt='faq-page-header' title='FAQ' src='/assets/faq-header.png' />
@@ -14,15 +20,20 @@ const FAQPage = () => {
                 <div>
                     <div className="w-full space-y-3 md:space-y-4">
                         {faqs.map((faq, index) => (
-                            <Collapsible key={index} className="rounded-2xl border border-[#E5E5E5] bg-white">
+                            <Collapsible
+                                onOpenChange={() => handleToggle(index)}
+                                key={index} className="rounded-2xl border border-[#C4C4CC] bg-white hover:bg-[#1c4a900a] transition-all duration-500 hover:cursor-pointer hover:border-[#1C4A90]">
                                 <CollapsibleTrigger className="group flex w-full items-start justify-between p-4 md:p-8 text-left">
-                                    <span className="card-title !font-semibold">
-                                        <span className="mr-2 ">Q</span>
+                                    <span className="card-title !text-base md:!text-2xl !font-semibold">
+                                        <span className="mr-2 text-[#1C4A90]">Q</span>
                                         {faq.question}
                                     </span>
-                                    <ChevronUp className="h-6 w-6 shrink-0 text-neutral-400 transition-transform duration-300 ease-in-out group-open:rotate-180" />
+                                    <ChevronDown
+                                        className={`h-6 w-6 shrink-0 text-neutral-400 transition-transform duration-300 ease-in-out ${openIndex === index ? '-rotate-180' : ''
+                                            }`}
+                                    />
                                 </CollapsibleTrigger>
-                                <CollapsibleContent className="px-6 pb-6 pt-0 text-[15px] leading-relaxed text-neutral-600 whitespace-pre-line space-y-6">
+                                <CollapsibleContent className="px-8 pb-6 pt-0 text-[15px] leading-relaxed text-neutral-600 whitespace-pre-line space-y-4 md:space-y-6">
                                     <hr className='border-[#C4C4CC]' />
                                     <div className='content-paragraph'>
                                         {faq.answer}
@@ -38,12 +49,12 @@ const FAQPage = () => {
                 <div className='bg-[#F7F7F7] mt-[120px] md:mt-[160px]'>
                     <div className='container space-y-16 py-[120px] md:py-[160px] px-5 md:px-0'>
                         <FAQBackground
-                        key={'faq1'}
+                            key={'faq1'}
                             cardBackground={false}
                             title={
-                                <div className='space-y-1 md:space-y-4'>
-                                    <p className='header-text '>학력검증</p>
-                                    <p className='text-xl md:text-[28px]'>Education Verification</p>
+                                <div>
+                                    <p className='header-text'>학력검증</p>
+                                    <p className='text-base md:text-[28px]'>Education Verification</p>
                                 </div>
                             }
                             description={
@@ -95,7 +106,7 @@ const FAQPage = () => {
                         title={
                             <>
                                 경력검증<br />
-                                <p className='text-[28px]'>Employment Verification</p>
+                                <p  className='text-base md:text-[28px]'>Employment Verification</p>
                             </>
                         }
                         description={
@@ -126,7 +137,7 @@ const FAQPage = () => {
                         }
                         subSectionBottom={
                             <>
-                                ㈜넥서스앤컴퍼니의 경력 검증 서비스는 허위·과장된 경력 및 사고 이력이 있는 지원자의 입사를 방지하기 위해,<br  className='hidden md:block'/>
+                                ㈜넥서스앤컴퍼니의 경력 검증 서비스는 허위·과장된 경력 및 사고 이력이 있는 지원자의 입사를 방지하기 위해,<br className='hidden md:block' />
                                 경력 사항의 진위 여부와 실근무 기간을 철저히 확인합니다.
                             </>
                         }

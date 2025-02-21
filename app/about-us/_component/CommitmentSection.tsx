@@ -11,7 +11,7 @@ const CommitmentSection = () => {
           <p>레퍼리 정보를 보호합니다. </p>
         </div>
       </div>
-      <div className='w-full container mx-auto'>
+      <div className='w-full'>
         <ExpandingCards data={CommitmentCardsData} />
       </div>
     </div>

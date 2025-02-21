@@ -1,23 +1,26 @@
 "use client";
 
 import ViewMoreButton from "@/components/ui/ViewMoreButton";
+import EmblaCarousel from "./Carosuel";
 import CarouselV2 from "./CarouselV2";
 
 export default function ClientStories() {
   return (
     <section className="w-full max-w-full">
-      <div className="py-[150px] bg-[#EFF2F5] px-5 md:px-0">
-        <div className="container mb-12">
+      <div className="py-[120px] md:py-[150px] bg-[#EFF2F5]">
+        <div className="container mb-12  px-5 md:px-0">
           <h2
-            className="text-[40px] text-primary font-bold mb-2 text-header tracking-[-0.8px]"
-            style={{ lineHeight: "64px" }}
+            className="text-xl md:text-[40px] text-primary font-bold mb-2 text-header tracking-[-0.8px] leading-[32px] md:leading-[64px]"
           >
             Satisfied Client Stories
           </h2>
-          <p className="text-[#202021]">신뢰를 바탕으로 함께 만들어가는 성공 사례들</p>
+          <p className="text-sm md:text-xl text-[#202021]">신뢰를 바탕으로 함께 만들어가는 성공 사례들</p>
         </div>
         <div className="hidden md:block">
           <CarouselV2 />
+        </div>
+        <div className="block md:hidden">
+          <EmblaCarousel />
         </div>
         <ViewMoreButton title={"Find Out More"} />
       </div>

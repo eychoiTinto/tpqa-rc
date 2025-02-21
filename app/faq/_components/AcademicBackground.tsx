@@ -35,7 +35,7 @@ const FAQBackground = ({ title, description, verificationPoints, cases, cardBack
                                 <BadgePoint key={index} buttonText={item.buttonText} title={item.title} />
                             ))}
                         </div>
-                        <h2 className='text-[#202021] text-sm md:text-base tracking-[0.24px] md:tracking-[-0.32px] pt-3'>{subSectionBottom}</h2>
+                        <h2 className='text-[#202021] text-xs md:text-base tracking-[0.24px] md:tracking-[-0.32px] pt-3'>{subSectionBottom}</h2>
                     </div>
                 </div>
             </div>

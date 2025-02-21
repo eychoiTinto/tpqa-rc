@@ -10,7 +10,7 @@ const CallToAction = () => {
             <div className='container md:grid grid-cols-1 gap-6 px-5 md:px-0'>
                 {callToActionData?.map((section) => (
                     <div key={section.id} className="relative overflow-hidden rounded-lg">
-                        <div className="relative min-h-[320px] md:min-h-[300px] w-full border border-white-border overflow-hidden rounded-2xl">
+                        <div className="relative min-h-[320px] w-full border border-white-border overflow-hidden rounded-2xl">
                             <Image src={section.image || "/placeholder.svg"} alt="" fill className="object-cover" priority />
                             <div
                                 className="absolute inset-0"
@@ -24,7 +24,7 @@ const CallToAction = () => {
                                     {section.subtitle && (
                                         <h3 className="title-paragraph !text-white">{section.subtitle}</h3>
                                     )}
-                                    <p className="text-sm text-gray-200 md:text-xl md:leading-8 tracking-[-0.28px] md:tracking-[-0.4px] break-keep mt-[12px]">{section.description}</p>
+                                    <p className="text-sm text-gray-200 md:text-xl tracking-[-0.28px] md:tracking-[-0.4px] ">{section.description}</p>
                                 </div>
                             </div>
                         </div>

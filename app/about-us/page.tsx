@@ -21,8 +21,8 @@ const AboutUsPage = () => {
                 <div className='container px-5 md:px-0'>
                     <GreetingsSection />
                 </div>
-                <div className='bg-[#F4F5F7] pt-[120px] md:pt-44'>
-                    <div className='container px-5 md:px-0 pb-[120px] md:pb-44'>
+                <div className='bg-[#F4F5F7] pt-[120px] md:pt-44 '>
+                    <div className='px-5 md:px-0 pb-[120px] md:pb-44 container'>
                         <div className='hidden md:block mb-44'>
                             <CommitmentSection />
                         </div>

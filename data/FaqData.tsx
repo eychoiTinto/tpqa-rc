@@ -24,10 +24,7 @@ export const faqs: FAQItem[] = [
                 <p>평판조회 비용은 대상(경력직, 신입) 및 경력직의 레벨(주니어, 시니어, 임원 등), 평판조회 항목의 난이도에 따라 달라집니다.</p>
                 <p>일률적인 표준 가격을 제시할 수도 있지만, 저희는 고객사와 후보자, 직무의 특성에 맞게 맞춤형으로 평판조회를 수행하기 때문에 상담을 통해 개별적으로 비용을 책정합니다.</p>
             </div>
-            <Button
-                variant="outline"
-                className="rounded-full px-5 py-6 text-xl border-[#133761] text-[#1C4A90] hover:bg-primary hover:text-white"
-            >
+            <Button variant={'outline'} className='border rounded-full text-sm md:text-xl py-[10px] md:py-7 px-5 md:px-6 border-[#133761] text-[#1C4A90] hover:bg-primary hover:text-white'>
                 컨설턴트에게 문의하기
             </Button>
         </>,

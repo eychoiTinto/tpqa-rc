@@ -10,7 +10,7 @@ export default function ProgressSteps({ currentStep = 1, steps = [], title, subt
                             <div
                                 className={`text-sm md:text-xl w-[160px] md:w-[200px] h-[160px] md:h-[200px] rounded-full flex items-center justify-center text-center leading-[22px] md:leading-[28px] tracking-[-0.32px] md:tracking-[0.4px] transition-all ${index + 1 === currentStep
                                     ? "bg-[#1C4A90] text-white"
-                                    : "border border-[#1C4A90] bg-white text-[#1C4A90]"
+                                    : "border border-[#1C4A90] text-[#1C4A90]"
                                     }`}
                             >
                                 <span>{step}</span>

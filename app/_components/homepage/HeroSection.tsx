@@ -59,8 +59,8 @@ export default function Hero() {
                             },
                         ].map((card, index) => (
                             <div key={index} className="hero-card">
-                                <h3 className="hero-card-title">{card.title}</h3>
-                                <p className="hero-card-subtitle">{card.subtitle}</p>
+                                <h3 className="hero-card-title ">{card.title}</h3>
+                                <p className="hero-card-subtitle !opacity-50">{card.subtitle}</p>
 
                                 <hr className="hero-divider" />
 
