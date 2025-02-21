@@ -2,6 +2,11 @@
 import Link from "next/link";
 import { Button } from './ui/button'
 
+const classNames = {
+    footerLabel: 'text-muted-foreground/50',
+    footerText: 'font-semibold text-muted-foreground !no-underline'
+}
+
 const Footer = () => {
     return (
         <div className='bg-[#0A2844] border-t-2 border-white-border w-full'>
@@ -12,40 +17,40 @@ const Footer = () => {
                         <div className='space-y-[10px]'>
                             <div className='flex flex-col md:flex-row gap-4 items-start md:items-center'>
                                 <div className='footer-subtext'>
-                                    <p className='text-muted-foreground/50'>사업자등록번호</p>
-                                    <p className='font-semibold text-muted-foreground'>591-81-02804</p>
+                                    <p className={classNames.footerLabel}>사업자등록번호</p>
+                                    <p className={classNames.footerText}>591-81-02804</p>
                                 </div>
                                 <div className='border-vertical'></div>
                                 <div className='footer-subtext'>
-                                    <p className='text-muted-foreground/50'>대표자</p>
-                                    <p className='font-semibold text-muted-foreground'>정서진</p>
+                                    <p className={classNames.footerLabel}>대표자</p>
+                                    <p className={classNames.footerText}>정서진</p>
                                 </div>
                                 <div className='border-vertical'></div>
                                 <div className='footer-subtext'>
-                                    <p className='text-muted-foreground/50'>연락처</p>
-                                    <p className='font-semibold text-muted-foreground'>{`02)557-8905`}</p>
+                                    <p className={classNames.footerLabel}>연락처</p>
+                                    <p className={classNames.footerText}>{`02)557-8905`}</p>
                                 </div>
                                 <div className='border-vertical'></div>
                                 <div className='footer-subtext'>
-                                    <p className='text-muted-foreground/50'>팩스</p>
-                                    <p className='font-semibold text-muted-foreground'>{`02)557-8908`}</p>
+                                    <p className={classNames.footerLabel}>팩스</p>
+                                    <p className={classNames.footerText}>{`02)557-8908`}</p>
                                 </div>
                             </div>
                             <div className='flex flex-col md:flex-row gap-4 items-start md:items-center'>
                                 <div className='!hidden md:!flex footer-subtext'>
-                                    <p className='text-muted-foreground/50'>주소</p>
-                                    <p className='font-semibold text-muted-foreground '>{`06151 서울특별시 강남구 선릉로93길 54, 6층 6349호(역삼동, 일환빌딩)`}</p>
+                                    <p className={classNames.footerLabel}>주소</p>
+                                    <p className={classNames.footerText}>{`06151 서울특별시 강남구 선릉로93길 54, 6층 6349호(역삼동, 일환빌딩)`}</p>
                                 </div>
                                 <div className='flex md:hidden footer-subtext'>
-                                    <p className='text-muted-foreground/50'>주소</p>
-                                    <p className='font-semibold text-muted-foreground '>06151 서울특별시 강남구 선릉로93길 54, 6층
+                                    <p className={classNames.footerLabel}>주소</p>
+                                    <p className={classNames.footerText}>06151 서울특별시 강남구 선릉로93길 54, 6층
                                         <br />
                                     6349호(역삼동, 일환빌딩)</p>
                                 </div>
                                 <div className='border-vertical'></div>
                                 <div className='footer-subtext'>
-                                    <p className='text-muted-foreground/50'>이메일</p>
-                                    <p className='font-semibold text-muted-foreground'>{`ask@refercheck.co.k`}</p>
+                                    <p className={classNames.footerLabel}>이메일</p>
+                                    <p className={classNames.footerText}>{`ask@refercheck.co.k`}</p>
                                 </div>
                             </div>
                         </div>

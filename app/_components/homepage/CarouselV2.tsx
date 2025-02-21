@@ -1,8 +1,11 @@
 'use client'
-import { Badge } from '@/components/ui/badge';
-import Image from 'next/image';
+// import { Badge } from '@/components/ui/badge';
+// import Image from 'next/image';
 import { useState } from 'react';
 import Carousel from 'react-multi-carousel';
+import { caseStudies } from '@/data/RefCheckData';
+import { CaseStudy } from '@/interface/RefCheckDataTypes';
+import InteractiveCard from '@/app/about-us/_component/CardList';
 import 'react-multi-carousel/lib/styles.css';
 
 // Props টাইপ ডিফাইন করা
@@ -16,7 +19,7 @@ interface ButtonGroupProps {
 
 const ButtonGroup: React.FC<ButtonGroupProps> = ({ next, previous, setPrev }) => {
     return (
-        <div className='carousel-button-group mb-4 gap-4 flex justify-between items-center w-full absolute container left-1/2 -translate-x-1/2'>
+        <div className='carousel-button-group mb-4 gap-4 flex justify-between items-center w-full absolute container left-1/2 -translate-x-1/2 h-0'>
             <svg
                 className='hover:cursor-pointer'
                 onClick={() => {
@@ -60,12 +63,10 @@ const ButtonGroup: React.FC<ButtonGroupProps> = ({ next, previous, setPrev }) =>
 const CarouselV2: React.FC = () => {
     const [prev, setPrev] = useState(false);
     console.log(prev);
-    const [activeIndex, setActiveIndex] = useState<number>(3);
 
     return (
         <div className='w-full max-w-full'>
             <Carousel
-                afterChange={(afterChange: number) => setActiveIndex(afterChange)}
                 additionalTransfrom={0}
                 customButtonGroup={<ButtonGroup setPrev={setPrev} next={() => { }} previous={() => { }} />}
                 arrows={false}
@@ -87,35 +88,10 @@ const CarouselV2: React.FC = () => {
                     mobile: { breakpoint: { max: 464, min: 0 }, items: 1, partialVisibilityGutter: 10 }
                 }}
             >
-                {stories.map((story) => {
-                    const nextIndex = activeIndex === 8 ? 4 : activeIndex + 1;
-                    const secondNextIndex = nextIndex === 8 ? 4 : nextIndex + 1;
-
+                {caseStudies?.map((caseStudy: CaseStudy) => {
                     return (
-                        <div key={story.id} className="pl-2 basis-full sm:basis-1/2 md:basis-1/3 first:pl-6 w-full">
-                            <div
-                                className={`relative h-[408px] overflow-hidden rounded-[16px] w-full transition-opacity duration-300 
-                                ${nextIndex === story.id || secondNextIndex === story.id ? 'opacity-100' : 'opacity-50'}`}
-                            >
-                                <Image
-                                    src={story.image || "/placeholder.svg"}
-                                    alt={story.title}
-                                    fill
-                                    className="object-cover brightness-50 w-full h-full"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
-                                <div className="absolute top-8 left-8">
-                                    <Badge variant="secondary" className="bg-white text-lg text-primary font-semibold px-4">
-                                        {story.tag}
-                                    </Badge>
-                                </div>
-                                <div className="absolute bottom-0 left-0 right-0 p-8 text-white text-[28px] font-semibold ">
-                                    <p>{story.title}</p>
-                                    <p className="tracking-[-0.56px] text-gray-200">
-                                        {story.subtitle}
-                                    </p>
-                                </div>
-                            </div>
+                        <div key={caseStudy.id} className="px-3 basis-full sm:basis-1/2 md:basis-1/3 w-full h-full">
+                            <InteractiveCard heading={caseStudy.heading} subtitle={caseStudy.subtitle} description={caseStudy.description} key={caseStudy.id} title={caseStudy.title} backgroundImage={caseStudy.backgroundImage} id={String(caseStudy.id)} />
                         </div>
                     );
                 })}
@@ -127,20 +103,20 @@ const CarouselV2: React.FC = () => {
 export default CarouselV2;
 
 
-interface Story {
-    id: number;
-    tag: string;
-    title: string;
-    subtitle: string;
-    image: string;
-}
+// interface Story {
+//     id: number;
+//     tag: string;
+//     title: string;
+//     subtitle: string;
+//     image: string;
+// }
 
-const stories: Story[] = [
-    { id: 4, tag: "검증사레", title: "국내 유통 대기업", subtitle: "인사운영팀 과장", image: "/assets/carosuel2.png" },
-    { id: 5, tag: "의뢰후기", title: "국내 반도체 대기업", subtitle: "인사팀 수석", image: "/assets/carosuel4.png" },
-    { id: 6, tag: "검증사례", title: "바이오벤처 J사", subtitle: "인사팀 팀장", image: "/assets/carosuel3.png" },
-    { id: 7, tag: "검증사례", title: "국내 금융사", subtitle: "인사팀 차장", image: "/assets/about-carosuel5.png" },
-    { id: 8, tag: "의뢰후기", title: "IT스타트업 L사", subtitle: "대표", image: "/assets/carosuel1.png" }
-];
+// const stories: Story[] = [
+//     { id: 4, tag: "검증사레", title: "국내 유통 대기업", subtitle: "인사운영팀 과장", image: "/assets/carosuel2.png" },
+//     { id: 5, tag: "의뢰후기", title: "국내 반도체 대기업", subtitle: "인사팀 수석", image: "/assets/carosuel4.png" },
+//     { id: 6, tag: "검증사례", title: "바이오벤처 J사", subtitle: "인사팀 팀장", image: "/assets/carosuel3.png" },
+//     { id: 7, tag: "검증사례", title: "국내 금융사", subtitle: "인사팀 차장", image: "/assets/about-carosuel5.png" },
+//     { id: 8, tag: "의뢰후기", title: "IT스타트업 L사", subtitle: "대표", image: "/assets/carosuel1.png" }
+// ];
 
 
