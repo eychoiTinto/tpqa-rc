@@ -8,7 +8,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 
 import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetTitle, SheetTrigger, SheetClose } from "@/components/ui/sheet"
 
 const Navbar = () => {
     const pathname = usePathname()
@@ -94,17 +94,17 @@ const Navbar = () => {
                         <SheetTitle></SheetTitle>
                         <div className="flex flex-col gap-4 mt-5">
                             {navLinks.map((link) => (
-                                <Link
-                                    key={link.href}
-                                    href={link.href}
-                                    className="text-lg font-medium hover:text-gray-200 transition-colors"
-                                >
-                                    {link.label}
-                                </Link>
+                                <SheetClose asChild key={link.href}>
+                                    <Link
+                                        href={link.href}
+                                        className="text-lg font-medium hover:text-gray-200 transition-colors"
+                                    >
+                                        {link.label}
+                                    </Link>
+                                </SheetClose>
                             ))}
                         </div>
                     </SheetContent>
-
                 </Sheet>
             </div>
         </nav>
