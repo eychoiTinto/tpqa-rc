@@ -31,7 +31,7 @@ const GreetingsSection = () => {
     return (
         <div>
             <div className='space-y-4 mb-10 md:mb-[100px]'>
-                <h3 className='title-important'>인사말</h3>
+                <h3 className='title-important !text-sm md:!text-2xl'>인사말</h3>
                 <div className='max-w-[502px] header-text tracking-[-0.8px] leading-[32px] md:leading-[64px]'>
                     <p>평판조회를 통해 더 나은 채용과</p>
                     <p>성공적인 파트너십을 지원합니다.</p>

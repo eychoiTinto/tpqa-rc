@@ -59,15 +59,17 @@ export default function Hero() {
                             },
                         ].map((card, index) => (
                             <div key={index} className="hero-card">
-                                <h3 className="hero-card-title ">{card.title}</h3>
-                                <p className="hero-card-subtitle !opacity-50">{card.subtitle}</p>
-
-                                <hr className="hero-divider" />
-
-                                <a href={card.scrollTo} className="flex items-center gap-2 justify-end text-sm md:text-xl font-normal">
-                                    Find Out More
-                                    <ChevronRight className="size-4 md:size-6"/>
-                                </a>
+                                <div>
+                                    <h3 className="hero-card-title ">{card.title}</h3>
+                                    <p className="hero-card-subtitle !opacity-50">{card.subtitle}</p>
+                                </div>
+                                <div>
+                                    <hr className="hero-divider" />
+                                    <a href={card.scrollTo} className="flex items-center gap-2 justify-end text-sm md:text-xl font-normal">
+                                        Find Out More
+                                        <ChevronRight className="size-4 md:size-6"/>
+                                    </a>
+                                </div>
                             </div>
                         ))}
                     </div>

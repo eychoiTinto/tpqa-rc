@@ -1,5 +1,6 @@
 .slider-container {
   display: flex;
+  gap: 20px;
   width: 100%;
 }
 
@@ -12,13 +13,28 @@
   color: #fff;
   cursor: pointer;
   flex: 0.5;
-  margin: 10px;
   padding: 20px;
   position: relative;
   transition: flex 0.7s ease-in;
   overflow: hidden;
+  word-break: keep-all;
 }
 
+.panel.active {
+  flex: 5;
+  padding: 2.5vw;
+}
+
+.panel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+}
 
 .background {
   position: absolute;
@@ -42,76 +58,103 @@
 
 /* Keep your existing styles for transitions and other properties */
 
-.panel::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 16px;
-}
 
 .panel h3 {
   font-size: 20px;
   position: absolute;
-  top: 48px;
-  left: 48px;
+  top: 2.5vw;
+  left: 2.5vw;
   margin: 0;
-  color: #c5c3c3;
-  opacity: 0.8;
-}
-.panel h4 {
-  position: absolute;
-  opacity: 0.8;
-  bottom: 48px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 20px;
-}
-
-.panel p.active {
-  position: absolute;
-  opacity: 0.8;
-  top: 48px;
-  right: 48px;
-  font-size: 20px;
-}
-.panel p.inactive {
-  position: absolute;
-  opacity: 0.8;
-  top: 48px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 20px;
-}
-
-
-.panel h2 {
-  font-size: 32px;
-  position: absolute;
-  top: 80px;
-  left: 48px;
-  font-style: normal;
-  font-weight: 700;
-  letter-spacing: -0.64px;
-}
-
-.panel .card-description {
-  position: absolute;
-  bottom: 48px;
-  color: #fff;
-  left: 48px;
-}
-
-.panel.active {
-  flex: 5;
+  color: rgba(197, 195, 195, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s ease-in 0.4s;
+  -webkit-transition: opacity 0.3s ease-in 0.4s;
+  -moz-transition: opacity 0.3s ease-in 0.4s;
+  -ms-transition: opacity 0.3s ease-in 0.4s;
+  -o-transition: opacity 0.3s ease-in 0.4s;
 }
 
 .panel.active h3 {
   opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s;
+}
+
+.panel h4 {
+  position: absolute;
+  bottom: 2.5vw;
+  left: 50%;
+  font-size: 20px;
+  white-space: nowrap;
+  opacity: 0.8;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.panel p {
+  position: absolute;
+  top: 2.5vw;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  font-size: 20px;
+  opacity: 0.5;
+}
+.panel.active p {
+  left: 100%;
+  padding-right: 2.5vw;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  opacity: 1;
+}
+
+.panel .content {
+  position: absolute;
+  top: 2.5vw;
+  left: 2.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(57.3076vw - 60px);
+  height: calc(100% - 5vw);
+}
+
+.panel h2 {
+  width: 1000%;
+  padding-top: 34px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.64px;
+  transition: width 0.5s 0.5s;
+  -webkit-transition: width 0.5s 0.5s;
+  -moz-transition: width 0.5s 0.5s;
+  -ms-transition: width 0.5s 0.5s;
+  -o-transition: width 0.5s 0.5s;
+  opacity: 0;
+}
+
+.panel.active h2 {
+  width: 100%;
+  opacity: 1;
+}
+
+.panel .card-description {
+  width: 1000%;
+  color: #fff;
+  opacity: 0;
+}
+
+.panel.active .card-description {
+  width: 100%;
+  opacity: 1;
 }
 
 @media (max-width: 400px) {

@@ -24,7 +24,7 @@ const CallToAction = () => {
                                     {section.subtitle && (
                                         <h3 className="title-paragraph !text-white">{section.subtitle}</h3>
                                     )}
-                                    <p className="text-sm text-gray-200 md:text-xl tracking-[-0.28px] md:tracking-[-0.4px] leading-[22px] md:leading-[32px] mt-[12px]">{section.description}</p>
+                                    <p className="text-sm text-gray-200 md:text-xl tracking-[-0.28px] md:tracking-[-0.4px] mt-[12px]">{section.description}</p>
                                 </div>
                             </div>
                         </div>
@@ -47,7 +47,7 @@ const CallToAction = () => {
                                     {section.subtitle && (
                                         <h3 className="!text-base md:title-paragraph !text-white">{section.subtitle}</h3>
                                     )}
-                                    <p className="text-sm text-gray-200 md:text-xl tracking-[-0.28px] md:tracking-[-0.4px] ">{section.description}</p>
+                                    <p className="text-sm text-gray-200 md:text-xl tracking-[-0.28px] md:tracking-[-0.4px]">{section.description}</p>
                                 </div>
                             </div>
                         </div>

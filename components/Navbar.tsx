@@ -57,7 +57,7 @@ const Navbar = () => {
                         />
                         ) : (
                         <img
-                            src="/logo-dark.png"
+                            src="/logo-dark.svg"
                             alt="logo icon of refcheck"
                             className="h-[18px] md:h-7 w-[132.429px] md:w-[206px]"
                         />

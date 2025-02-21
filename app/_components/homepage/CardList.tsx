@@ -19,7 +19,7 @@ export default function InteractiveCard({ title, id, description, backgroundImag
   return (
     <div
       onClick={toggleExpand}
-      className={`relative w-full ${isExpanded ? 'h-[500px]' : 'h-[200px]'} md:h-[408px] rounded-2xl overflow-hidden shadow-lg transition-all duration-300 ease-in-out cursor-pointer ${isExpanded ? "backdrop-blur-md" : ""
+      className={`relative w-full rounded-2xl overflow-hidden shadow-lg transition-all duration-300 ease-in-out cursor-pointer ${isExpanded ? "backdrop-blur-md" : ""
         }`}
       style={{
         backgroundImage: `url(${backgroundImage})`,
@@ -27,18 +27,18 @@ export default function InteractiveCard({ title, id, description, backgroundImag
         backgroundPosition: "center",
       }}
     >
-      <div className={`absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-300 ease-in-out ${isExpanded && 'backdrop-blur-lg'}`}>
-        <div className="h-full p-4 md:p-8 flex flex-col justify-between">
-          <div className="space-y-2 md:space-y-[13px]">
-            <h2 className="text-muted-foreground text-xs md:text-xl font-bold tracking-[-0.24px] md:tracking-[-0.4px]">{!isExpanded && `Case ${id}`}</h2>
-            <div className="text-muted-foreground text-base md:text-[28px]  leading-[24px] md:leading-[42px]">{title}</div>
-            {isExpanded && <p className="text-white text-base md:text-lg tracking-[-0.32px] md:tracking-[-0.36px]" style={{ lineHeight: '160%' }}>{description}</p>}
+      <div className={`h-full inset-0 bg-black bg-opacity-50 transition-opacity duration-300 ease-in-out ${isExpanded && 'backdrop-blur-lg'}`}>
+        <div className={`h-full flex flex-col justify-between transition-padding duration-300 ease-in-out ${isExpanded ? 'px-[32px] pt-[4px] pb-[60px]' : 'p-[32px]'}`}>
+          <div className="">
+            <h2 className={`text-muted-foreground text-xs md:text-xl font-bold tracking-[-0.24px] md:tracking-[-0.4px] ${isExpanded ? 'opacity-0' : 'opacity-100'}`}>Case {id}</h2>
+            <div className="text-muted-foreground text-base md:text-[28px] leading-[24px] md:leading-[42px]">{title}</div>
+            <p className={`text-white text-base mt-[20px] md:text-lg tracking-[-0.32px] md:tracking-[-0.36px] transition-opacity duration-300 leading-[160%] ${isExpanded ? 'opacity-100' : 'opacity-0'}`}>{description}</p>
           </div>
           <button
-            className="absolute bottom-4 md:bottom-8 right-4 md:right-8 h-10 flex items-center justify-center transition-all duration-300 ease-in-out"
+            className={`absolute bottom-4 md:bottom-8 right-4 md:right-8 h-10 flex items-center justify-center transition-all duration-300 ease-in-out ${isExpanded ? 'opacity-0' : ''}`}
             aria-label={isExpanded ? "Collapse card" : "Expand card"}
           >
-            {isExpanded ? "" : <PlusCircle />}
+            <PlusCircle/>
           </button>
         </div>
       </div>

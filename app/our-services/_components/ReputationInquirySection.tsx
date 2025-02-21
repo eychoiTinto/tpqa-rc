@@ -6,7 +6,7 @@ const ReputationInquirySection = () => {
     return (
         <div className='container mx-auto pt-[100px]'>
             <div className='space-y-4 md:space-y-3'>
-                <h2 className='title-important md:!text-2xl'>평판조회 종류</h2>
+                <h2 className='title-important !text-sm md:!text-2xl'>평판조회 종류</h2>
                 <h1 className='header-text leading-[32px] md:leading-[64px]'>국내, 해외 어느 지역이든,<br />
                     (주)넥서스앤컴퍼니는 가능합니다.</h1>
             </div>

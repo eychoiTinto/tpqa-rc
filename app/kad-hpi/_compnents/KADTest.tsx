@@ -8,7 +8,7 @@ const KADTest = () => {
     return (
         <div className='px-5 md:px-0'>
             <div className='container mt-[60px] md:mt-[100px]'>
-                <h2 className='text-sm md:text-2xl font-bold !text-[#1C4A90]'>KAD 인적성검사란?</h2>
+                <h2 className='title-important !text-sm md:!text-2xl'>KAD 인적성검사란?</h2>
                 <h1 className='header-text mt-4 md:mt-3'>한국사회적성개발원이 개발한 <br />한국형 인 · 적성 측정도구</h1>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 mt-[40px] pb-14'>
                     <div className='card-no-border'>
