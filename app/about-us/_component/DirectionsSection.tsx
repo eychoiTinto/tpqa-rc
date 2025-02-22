@@ -1,65 +1,68 @@
 "use client"
-import "@types/navermaps";
-import React, { useEffect, useRef, useState } from 'react'
-declare global {
-    interface Window {
-        naver: typeof naver;
-    }
-}
+// import "@types/navermaps";
+import React from 'react'
+// declare global {
+//     interface Window {
+//         naver: typeof naver;
+//     }
+// }
 
 const DirectionsSection = () => {
-    const mapRef = useRef<HTMLDivElement>(null);
-    const [mapLoaded, setMapLoaded] = useState(false);
+    // const mapRef = useRef<HTMLDivElement>(null);
+    // const [mapLoaded, setMapLoaded] = useState(false);
 
-    useEffect(() => {
-        // 이미 스크립트가 로드된 경우
-        if (window.naver) {
-        initMap();
-        return;
-        }
+    // useEffect(() => {
+    //     // 이미 스크립트가 로드된 경우
+    //     if (window.naver) {
+    //     initMap();
+    //     return;
+    //     }
 
-        // 스크립트가 중복 추가되지 않도록 확인
-        if (!document.getElementById("naver-map-script")) {
-        const script = document.createElement("script");
-        script.id = "naver-map-script";
-        script.src = `https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=5alxaf9vys`;
-        script.async = true;
-        script.onload = () => {
-            setMapLoaded(true);
-        };
-        document.body.appendChild(script);
-        } else {
-        setMapLoaded(true);
-        }
-    }, []);
+    //     // 스크립트가 중복 추가되지 않도록 확인
+    //     if (!document.getElementById("naver-map-script")) {
+    //     const script = document.createElement("script");
+    //     script.id = "naver-map-script";
+    //     script.src = `https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=5alxaf9vys`;
+    //     script.async = true;
+    //     script.onload = () => {
+    //         setMapLoaded(true);
+    //     };
+    //     document.body.appendChild(script);
+    //     } else {
+    //     setMapLoaded(true);
+    //     }
+    // }, []);
 
-    // 지도가 로드된 후 실행
-    useEffect(() => {
-        if (mapLoaded) {
-        initMap();
-        }
-    }, [mapLoaded]);
+    // // 지도가 로드된 후 실행
+    // useEffect(() => {
+    //     if (mapLoaded) {
+    //     initMap();
+    //     }
+    // }, [mapLoaded]);
     
 
-    function initMap() {
-        if (!mapRef.current || !window.naver) return;
+    // function initMap() {
+    //     if (!mapRef.current || !window.naver) return;
 
-        const map = new window.naver.maps.Map(mapRef.current, {
-        center: new window.naver.maps.LatLng(37.5665, 126.9780),
-        zoom: 15,
-        });
+    //     const map = new window.naver.maps.Map(mapRef.current, {
+    //     center: new window.naver.maps.LatLng(37.5665, 126.9780),
+    //     zoom: 15,
+    //     });
 
-        new window.naver.maps.Marker({
-        position: new window.naver.maps.LatLng(37.5665, 126.9780),
-        map,
-        });
-    }
+    //     new window.naver.maps.Marker({
+    //     position: new window.naver.maps.LatLng(37.5665, 126.9780),
+    //     map,
+    //     });
+    // }
 
     return (
         <div className='bg-primary pt-[120px] md:pt-[160px] md:pb-[80px]'>
             <h1 className='header-text text-muted-foreground text-center'>오시는 길</h1>
             <div className='container mx-auto mt-[100px]'>
+                {/*
                 <div ref={mapRef} className="w-full h-[400px] md:h-[500px] bg-gray-300 rounded-[16px] overflow-hidden" />
+                */}
+                <iframe src="https://map.naver.com/p/entry/address/14142512.2388429,4509627.3986171,%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EC%84%A0%EB%A6%89%EB%A1%9C93%EA%B8%B8%2054?c=15.38,0,0,0,dh" className='w-full rounded-[16px] h-[200px] md:h-[500px]'></iframe>
                 <div className='mt-20 flex flex-col md:flex-row justify-between items-start'>
                     <div className='flex-1 space-y-[60px] md:space-y-20'>
                         <div className='text-white'>
