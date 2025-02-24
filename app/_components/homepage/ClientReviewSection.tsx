@@ -8,7 +8,7 @@ export default function ClientStories() {
   return (
     <section className="w-full max-w-full">
       <div className="py-[120px] md:py-[150px] bg-[#EFF2F5]">
-        <div className="container mb-12  px-5 md:px-0">
+        <div className="container mb-12">
           <h2
             className="text-xl md:text-[40px] text-primary font-bold mb-2 text-header tracking-[-0.8px] leading-[32px] md:leading-[64px]"
           >

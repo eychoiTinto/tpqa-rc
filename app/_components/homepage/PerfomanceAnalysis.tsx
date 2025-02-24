@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 const PerfomanceAnalysis = () => {
     return (
-        <div id="competitiveness" className="mb-[120px] md:my-[180px] bg-white space-y-[120px] md:space-y-48 px-5 md:px-0 w-full">
+        <div id="competitiveness" className="mb-[120px] md:my-[180px] bg-white space-y-[120px] md:space-y-48 w-full">
             <div className="flex flex-col md:flex-row gap-6 justify-between items-center container mx-auto w-full">
                 <div className="flex-1 space-y-3 md:space-y-5 w-full">
                     <div className="space-y-4 md:space-y-5 w-full">

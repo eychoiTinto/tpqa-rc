@@ -18,7 +18,7 @@ const AboutUsPage = () => {
                 <PageHeader title='About Us' src='/assets/about-banner-mobile.png' alt='about-us image' />
             </div>
             <div className='space-y-[120px] md:space-y-44 mt-[60px] md:mt-[100px]'>
-                <div className='container px-5 md:px-0'>
+                <div className='container'>
                     <GreetingsSection />
                 </div>
                 <div className='bg-[#F4F5F7] pt-[120px] md:pt-44 '>

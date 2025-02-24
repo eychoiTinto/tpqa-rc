@@ -5,6 +5,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
+  word-break: keep-all;
 }
 
 @layer base {

@@ -16,7 +16,7 @@ const HighlightText = ({ children }: { children: React.ReactNode }) => (
 export default function AboutSection() {
     return (
         <div id="what" className="bg-primary text-white relative overflow-hidden w-full">
-            <div className="pt-[120px] md:py-[200px] space-y-[108px] md:space-y-60 px-5 md:px-0 w-full">
+            <div className="pt-[120px] md:py-[200px] space-y-[108px] md:space-y-60 w-full">
                 <div className="flex flex-col justify-between items-start md:grid grid-cols-2 container mx-auto w-full">
                     {/* Left Content */}
                     <div className="space-y-6 w-full ">

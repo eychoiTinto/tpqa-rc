@@ -11,7 +11,7 @@ const KADTest = () => {
     }
 
     return (
-        <div className='px-5 md:px-0'>
+        <div className=''>
             <div className='container mt-[60px] md:mt-[100px]'>
                 <h2 className='title-important !text-sm md:!text-2xl'>
                     KAD 인적성검사란?
