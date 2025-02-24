@@ -29,7 +29,7 @@ export default function InteractiveCard({ title, subtitle, heading, description,
         backgroundPosition: "center",
       }}
     >
-      <div onMouseOver={() => setIsExpanded(true)} onMouseLeave={() => setIsExpanded(false)} className={`group inset-0 bg-black bg-opacity-50 transition-all duration-300 ease-in-out p-[24px] md:p-[1.6vw] h-full ${isExpanded && 'backdrop-blur-lg'}`}>
+      <div onMouseOver={() => setIsExpanded(true)} onMouseLeave={() => setIsExpanded(false)} className={`group relative inset-0 bg-black bg-opacity-50 transition-all duration-300 ease-in-out p-[24px] md:p-[1.6vw] h-full ${isExpanded && 'backdrop-blur-lg'}`}>
         <div className="h-full flex flex-col justify-between">
           <div className="h-full flex flex-col justify-between">
             <div>

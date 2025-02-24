@@ -3,7 +3,7 @@ import { ChevronRight } from "lucide-react"
 
 export default function Hero() {
     return (
-        <div className="h-full flex items-center justify-center overflow-hidden bg-primary top-0">
+        <div className="h-full  md:h-[1241px] flex items-center justify-center overflow-hidden bg-primary top-0">
             {/* Background Image */}
             <div
                 className="absolute inset-0 z-0 hero-bg"
