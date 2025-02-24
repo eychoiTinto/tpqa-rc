@@ -6,7 +6,7 @@ const PerfomanceAnalysis = () => {
                 <div className="flex-1 space-y-3 md:space-y-5 w-full">
                     <div className="space-y-4 md:space-y-5 w-full">
                         <h3 className="title-important">평판조회 실적</h3>
-                        <h1 className="header-text w-full md:max-w-96 tracking-[-0.4px] md:tracking-[-0.8px] leading-[32px] md:leading-[64px]">
+                        <h1 className="header-text w-full tracking-[-0.4px] md:tracking-[-0.8px] leading-[32px] md:leading-[64px]">
                             레퍼첵의 평판조회 <br /> 매년 20% 이상 증가 추세
                         </h1>
                     </div>
@@ -30,7 +30,7 @@ const PerfomanceAnalysis = () => {
             </div>
             <div className="flex flex-col md:flex-row gap-10 md:gap-6 justify-between items-center container mx-auto w-full">
                 <div className="md:flex-1 space-y-3 md:space-y-5">
-                    <div className="header-text w-full md:max-w-[578px] tracking-[-0.4px] md:tracking-[-0.8px] leading-[32px] md:leading-[64px]">
+                    <div className="header-text w-full tracking-[-0.4px] md:tracking-[-0.8px] leading-[32px] md:leading-[64px]">
                         <p>
                             평판조회를 실시하는 기업은 주로<br />
                             과장급, 차부장급, 대리급, 임원급,<br />
