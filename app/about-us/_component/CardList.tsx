@@ -14,7 +14,7 @@ interface CardProps {
 const classNames = {
   textArea: 'space-y-4 md:space-y-5 mt-4 md:mt-5',
   heading: 'text-white text-base md:text-2xl font-semibold tracking-[-0.32px] md:tracking-[-0.48px] opacity-0 group-hover:opacity-100',
-  description: 'text-white text-sm md:text-lg tracking-[-0.36px]animate-fadeIn opacity-0 group-hover:opacity-100'
+  description: 'text-white text-sm md:text-[20px] md:leading-[32px] tracking-[-0.36px] opacity-0 group-hover:opacity-100'
 }
 
 export default function InteractiveCard({ title, subtitle, heading, description, backgroundImage }: CardProps) {

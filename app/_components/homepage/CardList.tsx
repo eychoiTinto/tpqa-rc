@@ -31,8 +31,8 @@ export default function InteractiveCard({ title, id, description, backgroundImag
         <div className={`h-full flex flex-col justify-between transition-padding duration-300 ease-in-out ${isExpanded ? 'px-[32px] pt-[4px] pb-[60px]' : 'p-[32px]'}`}>
           <div className="">
             <h2 className={`text-muted-foreground text-xs md:text-xl font-bold tracking-[-0.24px] md:tracking-[-0.4px] ${isExpanded ? 'opacity-0' : 'opacity-100'}`}>Case {id}</h2>
-            <div className="text-muted-foreground text-base md:text-[28px] leading-[24px] md:leading-[42px]">{title}</div>
-            <p className={`text-white text-base mt-[20px] md:text-lg tracking-[-0.32px] md:tracking-[-0.36px] transition-opacity duration-300 leading-[160%] ${isExpanded ? 'opacity-100' : 'opacity-0'}`}>{description}</p>
+            <div className="text-muted-foreground text-base md:text-[24px] leading-[24px] md:leading-[36px]">{title}</div>
+            <p className={`text-white text-base mt-[20px] md:text-[20px] tracking-[-0.32px] md:tracking-[-0.36px] transition-opacity duration-300 leading-[160%] ${isExpanded ? 'opacity-100' : 'opacity-0'}`}>{description}</p>
           </div>
           <button
             className={`absolute bottom-4 md:bottom-8 right-4 md:right-8 h-10 flex items-center justify-center transition-all duration-300 ease-in-out ${isExpanded ? 'opacity-0' : ''}`}
