@@ -7,7 +7,7 @@ const CallToAction = () => {
         <div className='bg-primary pb-[120px] md:pb-44 space-y-[60px]'>
             <h1 className='header-text !text-muted-foreground text-center leading-[32px] md:leading-[64px]'>중요한 선택의 순간,<br />
                 체계적인 평판조회를 경험해보세요.</h1>
-            <div className='container md:grid grid-cols-1 gap-6'>
+            <div className='container flex flex-col gap-[12px] md:grid grid-cols-1 md:gap-6'>
                 {callToActionData?.map((section) => (
                     <div key={section.id} className="relative overflow-hidden rounded-lg">
                         <div className="relative min-h-[320px] w-full border border-white-border overflow-hidden rounded-2xl">
