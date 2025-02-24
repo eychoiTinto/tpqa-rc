@@ -5,7 +5,7 @@ import { ReactNode, useState } from "react";
 interface CardProps {
   id: string;
   title: string;
-  subtitle: string;
+  subtitle?: React.ReactNode;
   heading: ReactNode;
   backgroundImage: string;
   description: ReactNode
@@ -29,7 +29,7 @@ export default function InteractiveCard({ title, subtitle, heading, description,
         backgroundPosition: "center",
       }}
     >
-      <div onMouseOver={() => setIsExpanded(true)} onMouseLeave={() => setIsExpanded(false)} className={`group inset-0 bg-black bg-opacity-50 transition-all duration-300 ease-in-out p-[1.6vw] h-full ${isExpanded && 'backdrop-blur-lg'}`}>
+      <div onMouseOver={() => setIsExpanded(true)} onMouseLeave={() => setIsExpanded(false)} className={`group inset-0 bg-black bg-opacity-50 transition-all duration-300 ease-in-out p-[24px] md:p-[1.6vw] h-full ${isExpanded && 'backdrop-blur-lg'}`}>
         <div className="h-full flex flex-col justify-between">
           <div className="h-full flex flex-col justify-between">
             <div>
@@ -43,7 +43,7 @@ export default function InteractiveCard({ title, subtitle, heading, description,
                 <p className={classNames.description}>{description}</p>
               </div>
             </div>
-            <p className="block text-white/70 text-sm tracking-[-0.36px] animate-fadeIn md:hidden opacity-0 group-hover:opacity-100">{subtitle}</p>
+            <p className="block md:hidden text-white/70 text-sm tracking-[-0.36px] opacity-0 group-hover:opacity-100">{subtitle}</p>
           </div>
         </div>
       </div>

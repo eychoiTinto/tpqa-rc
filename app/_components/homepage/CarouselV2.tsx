@@ -1,7 +1,7 @@
 'use client'
 // import { Badge } from '@/components/ui/badge';
 // import Image from 'next/image';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import { caseStudies } from '@/data/RefCheckData';
 import { CaseStudy } from '@/interface/RefCheckDataTypes';
@@ -91,7 +91,14 @@ const CarouselV2: React.FC = () => {
                 {caseStudies?.map((caseStudy: CaseStudy) => {
                     return (
                         <div key={caseStudy.id} className="px-3 basis-full sm:basis-1/2 md:basis-1/3 w-full h-full">
-                            <InteractiveCard heading={caseStudy.heading} subtitle={typeof caseStudy.subtitle === "string" ? caseStudy.subtitle : ""} description={caseStudy.description} key={caseStudy.id} title={caseStudy.title} backgroundImage={caseStudy.backgroundImage} id={String(caseStudy.id)} />
+                            <InteractiveCard
+                                heading={caseStudy.heading}
+                                description={caseStudy.description}
+                                subtitle={caseStudy.subtitle}
+                                key={caseStudy.id}
+                                title={caseStudy.title}
+                                backgroundImage={caseStudy.backgroundImage}
+                                id={String(caseStudy.id)} />
                         </div>
                     );
                 })}

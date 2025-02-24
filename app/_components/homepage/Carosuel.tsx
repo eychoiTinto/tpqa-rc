@@ -22,7 +22,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
           {
             caseStudies?.map((caseStudy: CaseStudy) =>
               <div key={caseStudy.id} className='embla__slide'>
-                <InteractiveCard heading={caseStudy.heading} subtitle={typeof caseStudy.subtitle === "string" ? caseStudy.subtitle : ""} description={caseStudy.description} key={caseStudy.id} title={caseStudy.title} backgroundImage={caseStudy.backgroundImage} id={String(caseStudy.id)} />
+                <InteractiveCard heading={caseStudy.heading} subtitle={caseStudy.subtitle} description={caseStudy.description} key={caseStudy.id} title={caseStudy.title} backgroundImage={caseStudy.backgroundImage} id={String(caseStudy.id)} />
               </div>
             )
           }
