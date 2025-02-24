@@ -18,12 +18,12 @@ export default function ContactForm() {
                         <h1 className="text-xl md:text-[40px] font-semibold mb-4 tracking-[-0.8px] leading-[32px] md:leading-[64px]">Contact Consulting</h1>
                     </div>
                     <p className="hidden md:block text-muted-foreground text-sm md:text-xl md:leading-[32px]">
-                        <strong>회사소개서(고객사 포함), 평판조회 샘플은 아래 양식으로 요청해주세요.</strong>
+                        <strong>회사 소개서(고객사 포함), 평판조회 샘플은 아래 양식으로 요청해 주세요.</strong>
                         <br />
                         <span>아래 양식에 문의 내용을 남겨주시면 확인 후 회신드리도록 하겠습니다.</span>
                     </p>
                     <p className="block md:hidden text-muted-foreground text-sm md:text-xl leading-[22.4px] md:leading-[32px]">
-                        <strong>회사소개서(고객사 포함), 평판조회 샘플은<br />아래 양식으로 요청해주세요.</strong>
+                        <strong>회사 소개서(고객사 포함), 평판조회 샘플은<br />아래 양식으로 요청해주세요.</strong>
                         <br />
                         <span>아래 양식에 문의 내용을 남겨주시면 확인 후<br />회신드리도록 하겠습니다.</span>
                     </p>

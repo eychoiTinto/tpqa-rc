@@ -73,8 +73,8 @@ const FAQPage = () => {
                             }
                             verificationPoints={[
                                 '국내 / 해외 학력 검증',
-                                '캠퍼스 (본교/분교) 확인',
-                                '학・석・박 (수료/졸업) 확인',
+                                '캠퍼스(본교/분교) 확인',
+                                '학・석・박(수료/졸업) 확인',
                             ]}
                             subSectionTop={
                                 <>
@@ -91,7 +91,7 @@ const FAQPage = () => {
                             cases={[
                                 { buttonText: '사례 1', title: '학위 수료나 중퇴를 졸업으로 허위 기재' },
                                 { buttonText: '사례 2', title: '사례 교환학생 경험을 졸업생으로 위장' },
-                                { buttonText: '사례 3', title: '학.석.박 (수료/졸업) 확인' },
+                                { buttonText: '사례 3', title: '학.석.박(수료/졸업) 확인' },
                             ]}
                         />
                         <ProgressSteps currentStep={progreessData?.currentStep} steps={progreessData.steps} subtitle={progreessData?.subtitle} title={progreessData?.title} backgroundGray={progreessData?.backgroundGray} />
@@ -125,9 +125,9 @@ const FAQPage = () => {
                             </div>
                         }
                         verificationPoints={[
-                            '국내 / 해외 학력 검증',
-                            '캠퍼스 (본교/분교) 확인',
-                            '학・석・박 (수료/졸업) 확인',
+                            '재직기간 확인',
+                            '부서 및 직급 확인',
+                            '징계 이력 확인',
                         ]}
                         subSectionTop={
                             <>

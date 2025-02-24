@@ -49,7 +49,7 @@ const ReferenceCheckKeyItems = () => {
                             <h1 className='reference-card-p'>지원자가 서류에 기재하거나 면접에서 언급하지 않은 실제 이직 사유를 확인합니다.</h1>
                         </div>
                         <div className={classNames.card}>
-                            <h1 className='card-title'>실제 이직사유</h1>
+                            <h1 className='card-title'>실제 이직 사유</h1>
                             <p className={classNames.cardDescription}>
                                 퇴직 이유에 징계 또는 부적절한 행위가 포함되었는지 검토합니다. 이를 통해 지원자의 준법성, 근면성,
                                 인성, 인간관계를 종합적으로 평가할 수 있습니다. 이 과정은 지원자가 조직에 미칠 잠재적 영향을 사전에

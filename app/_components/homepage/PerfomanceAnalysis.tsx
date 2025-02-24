@@ -7,19 +7,19 @@ const PerfomanceAnalysis = () => {
                     <div className="space-y-4 md:space-y-5 w-full">
                         <h3 className="title-important">평판조회 실적</h3>
                         <h1 className="header-text w-full md:max-w-96 tracking-[-0.4px] md:tracking-[-0.8px] leading-[32px] md:leading-[64px]">
-                            (주)레퍼첵의 평판조회 <br /> 매년 20% 이상 증가추세
+                            레퍼첵의 평판조회 <br /> 매년 20% 이상 증가 추세
                         </h1>
                     </div>
                     <p className='hidden md:block content-paragraph'>
                         레퍼첵의 평판조회는 매년 20% 이상 성장하고 있습니다.<br />
                         최근 5개년 과차장급의 평판조회 의뢰가 급격하게 상승하고 있습니다.<br />
-                        이는 기업이 리더급의 검증에 더 심혈을 기울이고 있으며,<br />
+                        이는 기업이 리더급의 검증에 더 심혈을 기울이고 있으며,<br />
                         기존의 면접만으로 지원자 검증이 부족하다는 것을 보여주는 것입니다.
                     </p>
                     <p className='block md:hidden content-paragraph'>
                         레퍼첵의 평판조회는 매년 20% 이상 성장하고 있습니다.<br />
                         최근 5개년 과차장급의 평판조회 의뢰가 급격하게 상승하고<br />
-                        있습니다. 이는 기업이 리더급의 검증에 더 심혈을 기울이고<br />
+                        있습니다. 이는 기업이 리더급의 검증에 더 심혈을 기울이고<br />
                         있으며, 기존의 면접만으로 지원자 검증이 부족하다는 것을<br />
                         보여주는 것입니다.
                     </p>

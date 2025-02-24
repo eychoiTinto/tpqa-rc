@@ -32,7 +32,7 @@ export const InquiryData: InquiryDataTypes[] = [
         "description": <p>2차 면접 결과, 합격 또는<br className="hidden md:block" />좀 더 확인이 필요한 지원자</p>,
         "details": <>
             <p>
-                이전의 채용과정에서 학력과 경력의 진위 여부를<br className="hidden md:block"/>
+                이전의 채용 과정에서 학력과 경력의 진위 여부를<br className="hidden md:block"/>
                 조회하지 않은 경우 함께 조회하는 것을 추천합니다.<br className="hidden md:block"/>
                 최종 당락을 결정하는데 평판조회 결과를 참고합니다.
             </p>

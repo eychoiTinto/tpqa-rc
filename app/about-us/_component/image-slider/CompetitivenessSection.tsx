@@ -14,7 +14,7 @@ const CompetitivenessSection = () => {
                 </div>
                 <div className='card'>
                     <h1 className='card-title'>대기업 그룹사 및 외국계 기업의 풍부한 경험 보유</h1>
-                    <p className='card-description'>100대 대기업, 대형 ICT기업 및<br className="br-mobile" /> 유수 외국계 기업에 대한 평판조회 경험 보유</p>
+                    <p className='card-description'>100대 대기업, 대형 ICT 기업 및<br className="br-mobile" /> 유수 외국계 기업에 대한 평판조회 경험 보유</p>
                 </div>
                 <div className='card'>
                     <h1 className='card-title'>고품격 평판조회 서비스 제공</h1>
@@ -22,11 +22,11 @@ const CompetitivenessSection = () => {
                 </div>
                 <div className='card'>
                     <h1 className='card-title'>헤드헌터 출신의 전문가에 의한 평판조회 수행</h1>
-                    <p className='card-description'>헤드헌터 경력의 컨설턴트가 평판조회를<br className="br-mobile" /> 수행 하기에 전문화된 업무수행 가능</p>
+                    <p className='card-description'>헤드헌터 경력의 컨설턴트가 평판조회를<br className="br-mobile" /> 수행하기에 전문화된 업무 수행 가능</p>
                 </div>
                 <div className='card'>
-                    <h1 className='card-title'>금융/ICT/제약바이오/소비재/제조/서비스 등의 전문분야 강점</h1>
-                    <p className='card-description'>금융, 제약바이오 및 ICT 등의 분야에<br className="br-mobile" /> 많은 경험과 전문성 보유</p>
+                    <h1 className='card-title'>금융/ICT/제약 바이오/소비재/제조/서비스 등의 전문분야 강점</h1>
+                    <p className='card-description'>금융, 제약 바이오 및 ICT 등의 분야에<br className="br-mobile" /> 많은 경험과 전문성 보유</p>
                 </div>
             </div>
         </div>

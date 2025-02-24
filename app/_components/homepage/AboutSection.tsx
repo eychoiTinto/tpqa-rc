@@ -40,7 +40,7 @@ export default function AboutSection() {
                         <ChatBubble position='left' message="단순 면접만으로는 지원자의 진짜 성격과 협업 태도를 알기 어려워요" />
                         <ChatBubble position='right' message="서류만 보면 완벽해 보이는데, 실제로 어떤 사람인지 확신이 안 들어요." />
                         <ChatBubble position='left' message="채용 후 문제가 생길까 걱정돼서 미리 더 확실히 검증하고 싶어요." />
-                        <ChatBubble position='right' message="걸으로는 괜찮아 보이지만, 과거 이력이나 평판이 걱정돼요." />
+                        <ChatBubble position='right' message="겉으로는 괜찮아 보이지만, 과거 이력이나 평판이 걱정돼요." />
                     </div>
                 </div>
                 <Wave />
@@ -91,8 +91,8 @@ function Wave() {
                     <p className='hidden md:block tracking-[-0.4px] md:tracking-[-0.8px] leading-[32px] md:leading-[64px]'>
                         해외에서는 경력직 채용 과정에서<br />
                         평판조회가 핵심적인 절차로 자리 잡고 있으며,<br />
-                        채용 결정에 중요한 영향을 미치는 활동으로 평가 받고 있습니다.<br />
-                        실제로 미국 인사관리협회(SHRM)의 조사에 따르면,<br />
+                        채용 결정에 중요한 영향을 미치는 활동으로 평가받고 있습니다.<br />
+                        실제로 미국 인사관리 협회(SHRM)의 조사에 따르면,<br />
                         90% 이상의 기업이 평판조회를 실시하고 있는 것으로 나타났습니다.
                     </p>
                     <p className='block md:hidden tracking-[-0.4px] leading-[32px] text-xl'>
@@ -106,7 +106,7 @@ function Wave() {
                     </p>
                 </ HighlightText>
                 <SubText>
-                    <p style={{ lineHeight: '180%' }} className='tracking-[-0.28px] md:tracking-[-0.4px] text-sm md:text-xl'>국내 주요 취업포털 3사의 조사 결과, <strong className='text-white'>평균 60% 이상의</strong> 기업이<br />평판조회를 사용하고 있으며, <strong className='text-white'>이를 기준 중 95%</strong>는 조회 결과를<br />실제 채용 의사 결정에 적극적으로 반영하고 있는 것으로 조사되었습니다.</p>
+                    <p style={{ lineHeight: '180%' }} className='tracking-[-0.28px] md:tracking-[-0.4px] text-sm md:text-xl'>국내 주요 취업포털 3사의 조사 결과, <strong className='text-white'>평균 60% 이상</strong>의 기업이<br />평판조회를 시행하고 있으며, <strong className='text-white'>이들 기업 중 95%</strong>는 조회 결과를<br />실제 채용 의사 결정에 적극적으로 반영하고 있는 것으로 조사되었습니다.</p>
                 </SubText>
 
             </div>

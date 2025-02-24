@@ -12,7 +12,7 @@ export const caseStudies: CaseStudy[] = [
             할 수 있어 매우 유익했습니다.
         </>,
         description: <>
-            전직장 상사들에게는 팔로우십이 뛰어나고 수용성이 높은 인재라는 평가를 받았으나, 함께<br className="hidden sm:block"/> 근무했던 부하직원들에게는 상명하복을 강요하는 리더라는 평가를 받았습니다. 차기 팀장이<br className="hidden sm:block"/>될 수 있는 중요한 포지션이었기에, 채용 최종 결정을 내리는데  도움이 되었습니다.
+            전 직장 상사들에게는 팔로우십이 뛰어나고 수용성이 높은 인재라는 평가를 받았으나, 함께<br className="hidden sm:block"/> 근무했던 부하직원들에게는 상명하복을 강요하는 리더라는 평가를 받았습니다. 차기 팀장이<br className="hidden sm:block"/>될 수 있는 중요한 포지션이었기에, 채용 최종 결정을 내리는 데 도움이 되었습니다.
         </>,
     },
     {
@@ -41,8 +41,8 @@ export const caseStudies: CaseStudy[] = [
             채용 실패를 예방할 수 있었습니다.
         </>,
         description: <>
-            호감형 인상과 뛰어난 말솜씨, 우수한 영업 실적으로 면접에서높은 평가를받은 후보자를<br className="hidden md:block"/>
-            최종 점검 차원에서평판조회를 진행했습니다. 그 결과, 업무 실적이 부풀려진 것과 실적<br className="hidden md:block"/>
+            호감형 인상과 뛰어난 말솜씨, 우수한 영업 실적으로 면접에서 높은 평가를 받은 후보자를<br className="hidden md:block"/>
+            최종 점검 차원에서 평판조회를 진행했습니다. 그 결과, 업무 실적이 부풀려진 것과 실적<br className="hidden md:block"/>
             조작으로 징계 받은 이력이 드러났습니다.
         </>,
 
@@ -56,7 +56,7 @@ export const caseStudies: CaseStudy[] = [
             평판조회 결과가 큰 도움이 되었습니다.
         </>,
         description: <>
-            면접 결과가 비슷한 상황에서 임원진들간의 의견이 엇갈려 결정이 어려웠습니다.<br className="hidden md:block"/>
+            면접 결과가 비슷한 상황에서 임원진들 간의 의견이 엇갈려 결정이 어려웠습니다.<br className="hidden md:block"/>
             A 후보자는 희생정신이 강해 때때로 손해를 보기도 했지만 동료들로부터 신임을 받고 있었고,<br className="hidden md:block"/>
             B 후보자는 편협한 대인관계로 인해 조직원 내에서 호불호가 갈린다는 점을 평판조회 결과를<br className="hidden md:block"/>
             통해 확인할 수 있었습니다.
@@ -70,13 +70,13 @@ export const caseStudies: CaseStudy[] = [
         subtitle: <>IT스타트업 L사<br /> 대표</>,
         heading: <>
             스타트업 조직은 인원 한 명 한 명 채용에<br className="hidden md:block"/>
-            신중을 기할 수 밖에 없습니다. 앞으로 경력직 채용시<br className="hidden md:block"/>
+            신중을 기할 수밖에 없습니다. 앞으로 경력직 채용 시<br className="hidden md:block"/>
             반드시 평판조회를 진행할 예정입니다.
         </>,
         description: <>
             미꾸라지 한 마리가 온 웅덩이를 흐린다는 옛말처럼, 사람 한 명이 잘못 채용되면 조직 전체가<br className="hidden md:block"/>
-            와해 될 수 있습니다. 면접에서 우려했던 부분들을, 후보자와 함께 근무했던 동료들을 통해<br className="hidden md:block"/>
-            직접 확인 할 수 있었습니다.
+            와해될 수 있습니다. 면접에서 우려했던 부분들을, 후보자와 함께 근무했던 동료들을 통해<br className="hidden md:block"/>
+            직접 확인할 수 있었습니다.
         </>,
         backgroundImage: '/assets/about-carosuel5.png',
 
@@ -86,11 +86,11 @@ export const caseStudies: CaseStudy[] = [
         title: "의뢰후기",
         subtitle: <>외국계기업<br /> People managing team 매니저</>,
         heading: <>
-            평판조회는 경력직 채용시 후보자를<br className="hidden md:block"/>
+            평판조회는 경력직 채용 시 후보자를<br className="hidden md:block"/>
             검증하는 중요한 방법 중 하나입니다.
         </>,
         description: <>
-            현장에서 가장 중요하게 평가되는 리더십, 협업능력, 인성, 조직융화력을 30분의 대면<br className="hidden md:block"/>
+            현장에서 가장 중요하게 평가되는 리더십, 협업 능력, 인성, 조직 융화력을 30분의 대면<br className="hidden md:block"/>
             면접만으로는 평가하기 어렵습니다. 평판조회는 짧은 면접 시간에 확인하지 못했던 부분들을<br className="hidden md:block"/>
             후보자 주변인들을 통해 검증할 수 있는 가장 효율적인 방법이며, ㈜넥서스앤컴퍼니의<br className="hidden md:block"/>
             보고서에는 이러한 중요한 정보들이 모두 담겨있습니다.
@@ -138,7 +138,7 @@ export const caseStudies: CaseStudy[] = [
         title: "의뢰후기",
         subtitle: <>국내 건설 대기업<br/> 인사팀 Pro</>,
         heading: <>
-            면접에서 역량을 제대로발휘하지 못했던<br className="hidden md:block"/>
+            면접에서 역량을 제대로 발휘하지 못했던<br className="hidden md:block"/>
             후보자의 진면목을 발견하여 우수 인재를 놓치지 않았습니다.
         </>,
         description: <>
@@ -153,11 +153,11 @@ export const caseStudies: CaseStudy[] = [
         title: "의뢰후기 ",
         subtitle: <>공공기관 H사<br/> 인사담당자</>,
         heading: <>
-            각 직군 별, 후보자 별 핵심포인트가 파악된 내용이<br className="hidden md:block"/>
+            각 직군 별, 후보자 별 핵심 포인트가 파악된 내용이<br className="hidden md:block"/>
             보고서에 담겨 있는 것이 인상적입니다.
         </>,
         description: <>
-            천편일률적인 응답 내용이 아닌, 각 후보자와 포지션에 맞춘 중요 포인트가 상세히 기록되어 있으며, 조회인마다 다른 의견들도 종합적으로 기재되어 있습니다. 이를 통해 의사결정을 내리는데 중요한 데이터를 제공받고 있습니다.
+            천편일률적인 응답 내용이 아닌, 각 후보자와 포지션에 맞춘 중요 포인트가 상세히 기록되어 있으며, 조회인마다 다른 의견들도 종합적으로 기재되어 있습니다. 이를 통해 의사결정을 내리는 데 중요한 데이터를 제공받고 있습니다.
         </>,
         backgroundImage: '/assets/about-carousel10.jpeg',
 
@@ -171,7 +171,7 @@ export const caseStudies: CaseStudy[] = [
             드러나 채용을 막아 회사 명예 실추를 방지했습니다.
         </>,
         description: <>
-            화려한 스펙과 커리어, 출중한 언변으로 면접 결과 유능한 리더라고 생각했습니다. 명문대 졸업 후 국내 및 글로벌 대기업에서 커리어를 쌓은 임원급 후보자가 유복한 집안 자제로 낙하산 인사 채용이었다는 것을 확인했으며, 재직기간 근태 불량, 공금횡령, 폭언 등의 문제가 있었던 것으로 밝혀졌습니다. 채용했다면 자칫 회사의 명예를 실추시킬 뻔 했습니다.
+            화려한 스펙과 커리어, 출중한 언변으로 면접 결과 유능한 리더라고 생각했습니다. 명문대 졸업 후 국내 및 글로벌 대기업에서 커리어를 쌓은 임원급 후보자가 유복한 집안 자제로 낙하산 인사 채용이었다는 것을 확인했으며, 재직기간 근태 불량, 공금횡령, 폭언 등의 문제가 있었던 것으로 밝혀졌습니다. 채용했다면 자칫 회사의 명예를 실추시킬 뻔했습니다.
         </>,
         backgroundImage: '/assets/about-carousel11.jpeg',
 
@@ -220,7 +220,7 @@ export const caseStudies: CaseStudy[] = [
         </>,
         description: <>
             외국계 기업에서 장기간 근무하며 해당 분야의 전문가로 생각하여 후보자를 임원으로<br className="hidden md:block"/> 
-            채용하려 했습니다. 그러나 평판조회 결과, 해당 직무 경력은 2년 미만이며, 조직 문화 특성 상<br className="hidden md:block"/> 
+            채용하려 했습니다. 그러나 평판조회 결과, 해당 직무 경력은 2년 미만이며, 조직 문화 특성상<br className="hidden md:block"/> 
             권고사직이 어려웠던 것으로 밝혀졌습니다. 또한 팀원들의 역량 개발에는 전혀 관심이 없고<br className="hidden md:block"/> 
             팀원들의 성과에 무임승차하는 리더였던 것으로 확인되었습니다. 이러한 사실을 바탕으로,<br className="hidden md:block"/> 
             해당 후보자는 채용하지 않기로 결정했습니다.
