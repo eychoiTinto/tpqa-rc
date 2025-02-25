@@ -42,14 +42,13 @@ const DirectionsSection = () => {
 
     function initMap() {
         if (!mapRef.current || !window.naver) return;
-
         const map = new window.naver.maps.Map(mapRef.current, {
-        center: new window.naver.maps.LatLng(37.5665, 126.9780),
+        center: new window.naver.maps.LatLng(37.504411, 127.044321),
         zoom: 15,
         });
 
         new window.naver.maps.Marker({
-        position: new window.naver.maps.LatLng(37.5665, 126.9780),
+        position: new window.naver.maps.LatLng(37.504411, 127.044321),
         map,
         });
     }
