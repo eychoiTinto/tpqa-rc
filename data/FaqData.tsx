@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
 import { ReactNode } from "react"
+import ViewMoreButton from "@/components/ui/ViewMoreButton";
 
 interface FAQItem {
     question: string
@@ -15,7 +15,7 @@ export const faqs: FAQItem[] = [
     {
         question: "왜 (주)넥서스앤컴퍼니에게 평판조회를 의뢰해야 하나요?",
         answer:
-            <p>(주)넥서스앤컴퍼니는 국내에서 가장 많은 평판조회 노하우와 다양한 업종 경험을 가진 컨설턴트들을 보유하고 있습니다.<br />평판조회 성공의 핵심은 다음 세 가지입니다:<br /> 1) 후보자, 직무, 고객사를 정확히 이해하는 것<br /> 2) 후보자와 함께 일했거나 잘 알고 있는 레퍼리(추천인)를 확보하는 것<br /> 3) 레퍼리에 적합한 질문을 통해 후보자의 강점과 약점을 깊이 있게 파악하는 것<br />저희 컨설턴트들은 이 핵심 요소를 철저히 준수하며 평판조회를 진행합니다.</p>,
+            <p>(주)넥서스앤컴퍼니는 국내에서 가장 많은 평판조회 노하우와 다양한 업종 경험을 가진 컨설턴트들을 보유하고 있습니다.<br />평판조회 성공의 핵심은 다음 세 가지입니다:<br /> 1) 후보자, 직무, 고객사를 정확히 이해하는 것<br /> 2) 후보자와 함께 일했거나 잘 알고 있는 레퍼리(추천인)를 확보하는 것<br /> 3) 레퍼리에 적합한 질문을 통해 후보자의 강점과 약점을 깊이 있게 파악하는 것<br />저희 컨설턴트들은 이 핵심 요소를 철저히 준수하며 평판조회를 진행합니다.</p>,
     },
     {
         question: "평판조회 비용은 얼마인가요?",
@@ -24,9 +24,9 @@ export const faqs: FAQItem[] = [
                 <p>평판조회 비용은 대상(경력직, 신입) 및 경력직의 레벨(주니어, 시니어, 임원 등), 평판조회 항목의 난이도에 따라 달라집니다.</p>
                 <p>일률적인 표준 가격을 제시할 수도 있지만, 저희는 고객사와 후보자, 직무의 특성에 맞게 맞춤형으로 평판조회를 수행하기 때문에 상담을 통해 개별적으로 비용을 책정합니다.</p>
             </div>
-            <Button variant={'outline'} className='border rounded-full text-sm md:text-xl py-[10px] md:py-7 px-5 md:px-6 border-[#133761] text-[#1C4A90] hover:bg-primary hover:text-white'>
-                컨설턴트에게 문의하기
-            </Button>
+            <div className="flex">
+                <ViewMoreButton title={"컨설턴트에게 문의하기"} link='/#contactForm'/>
+            </div>
         </>,
     },
     {

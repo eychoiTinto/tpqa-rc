@@ -16,13 +16,13 @@ export default function ClientStories() {
           </h2>
           <p className="text-sm md:text-xl text-[#202021]">신뢰를 바탕으로 함께 만들어가는 성공 사례들</p>
         </div>
-        <div className="hidden md:block">
+        <div className="hidden md:block mb-[60px]">
           <CarouselV2 />
         </div>
-        <div className="block md:hidden">
+        <div className="block md:hidden mb-10">
           <EmblaCarousel />
         </div>
-        <ViewMoreButton title={"Find Out More"} />
+        <ViewMoreButton title={"Find Out More"} link='/about-us/#aboutCase'/>
       </div>
     </section>
   );

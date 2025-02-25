@@ -15,7 +15,7 @@ const CustomerReviewSection = () => {
     return (
         <div id="aboutCase" className='bg-white container mx-auto'>
             <h2 className='header-text'>고객사 의뢰 후기 및 검증 사례</h2>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 md:mt-16'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 md:mt-16 mb-10 md:mb-[60px]'>
                 {
                     caseStudies?.slice(0, skip)?.map((caseStudy: CaseStudy) => <InteractiveCard heading={caseStudy.heading} subtitle={caseStudy.subtitle} description={caseStudy.description} key={caseStudy.id} title={caseStudy.title} backgroundImage={caseStudy.backgroundImage} id={String(caseStudy.id)} />)
                 }

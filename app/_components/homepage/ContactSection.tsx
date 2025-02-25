@@ -30,9 +30,9 @@ export default function ContactForm() {
                 </div>
 
                 {/* Form */}
-                <Card className="bg-transparent border-none">
+                <Card className="bg-transparent border-none" >
                     <CardContent className="p-0">
-                        <form className="space-y-10">
+                        <form id="contactForm" className="space-y-10">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
                                     <Label htmlFor="company" className="text-muted-foreground text-sm md:text-lg">
