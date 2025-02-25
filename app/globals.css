@@ -8,6 +8,45 @@ body {
   word-break: keep-all;
 }
 
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local('Pretendard'),
+    url('fonts/eot/Pretendard-Regular.eot') format('embedded-opentype'),
+    url('fonts/woff2/Pretendard-Regular.woff2') format('font-woff2'),
+    url('fonts/woff/Pretendard-Regular.woff') format('font-woff'),
+    url('fonts/ttf/Pretendard-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local('Pretendard'),
+    url('fonts/eot/Pretendard-Medium.eot') format('embedded-opentype'),
+    url('fonts/woff2/Pretendard-Medium.woff2') format('font-woff2'),
+    url('fonts/woff/Pretendard-Medium.woff') format('font-woff'),
+    url('fonts/ttf/Pretendard-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local('Pretendard'),
+    url('fonts/eot/Pretendard-Bold.eot') format('embedded-opentype'),
+    url('fonts/woff2/Pretendard-Bold.woff2') format('font-woff2'),
+    url('fonts/woff/Pretendard-Bold.woff') format('font-woff'),
+    url('fonts/ttf/Pretendard-Bold.ttf') format('truetype');
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -86,6 +125,10 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+html,
+body {
+  font-family: 'Pretendard', sans-serif;
 }
 button {
   outline: none;
