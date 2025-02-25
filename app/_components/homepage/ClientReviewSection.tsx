@@ -22,7 +22,7 @@ export default function ClientStories() {
         <div className="block md:hidden mb-10">
           <EmblaCarousel />
         </div>
-        <ViewMoreButton title={"Find Out More"} link='/about-us/#aboutCase'/>
+        <ViewMoreButton title={"Find Out More"} link='/about-us'/>
       </div>
     </section>
   );

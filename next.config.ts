@@ -4,6 +4,7 @@ import path from "path";
 const nextConfig: NextConfig = {
   output: "export",
   assetPrefix: "./",
+  basePath: '',
   trailingSlash: true,
   images: {
     unoptimized: true,
